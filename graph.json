@@ -1,0 +1,196 @@
+{
+  "nodes": {
+    "n1": {
+      "id": "n1",
+      "question_id": "sum_001",
+      "question": "How many rows are in the table?",
+      "topic": "summary",
+      "table": "orcamento_de_materiais_para_ref_1, orcamento_de_materiais_para_ref_2",
+      "explored": false,
+      "children": [],
+      "summary": null,
+      "result": {
+        "columns": [
+          "row_count"
+        ],
+        "data": [
+          [
+            18
+          ],
+          [
+            2
+          ]
+        ]
+      }
+    },
+    "n2": {
+      "id": "n2",
+      "question_id": "sum_002",
+      "question": "What is the total amount?",
+      "topic": "summary",
+      "table": "orcamento_de_materiais_para_ref_1, orcamento_de_materiais_para_ref_2",
+      "explored": false,
+      "children": [],
+      "summary": null,
+      "result": {
+        "columns": [
+          "total"
+        ],
+        "data": [
+          [
+            27894.04
+          ],
+          [
+            28948.85
+          ]
+        ]
+      }
+    },
+    "n3": {
+      "id": "n3",
+      "question_id": "sum_003",
+      "question": "What is the average amount?",
+      "topic": "summary",
+      "table": "orcamento_de_materiais_para_ref_1, orcamento_de_materiais_para_ref_2",
+      "explored": false,
+      "children": [],
+      "summary": null,
+      "result": {
+        "columns": [
+          "average"
+        ],
+        "data": [
+          [
+            1549.668888888889
+          ],
+          [
+            14474.425
+          ]
+        ]
+      }
+    },
+    "n4": {
+      "id": "n4",
+      "question_id": "sum_004",
+      "question": "What is the minimum amount?",
+      "topic": "summary",
+      "table": "orcamento_de_materiais_para_ref_1, orcamento_de_materiais_para_ref_2",
+      "explored": false,
+      "children": [],
+      "summary": null,
+      "result": {
+        "columns": [
+          "minimum"
+        ],
+        "data": [
+          [
+            10.0
+          ],
+          [
+            7941.96
+          ]
+        ]
+      }
+    },
+    "n5": {
+      "id": "n5",
+      "question_id": "sum_005",
+      "question": "What is the maximum amount?",
+      "topic": "summary",
+      "table": "orcamento_de_materiais_para_ref_1, orcamento_de_materiais_para_ref_2",
+      "explored": false,
+      "children": [],
+      "summary": null,
+      "result": {
+        "columns": [
+          "maximum"
+        ],
+        "data": [
+          [
+            13947.02
+          ],
+          [
+            21006.89
+          ]
+        ]
+      }
+    },
+    "n6": {
+      "id": "n6",
+      "question_id": "sum_008",
+      "question": "How many unique products are there?",
+      "topic": "summary",
+      "table": "orcamento_de_materiais_para_ref_1",
+      "explored": false,
+      "children": [],
+      "summary": null,
+      "result": {
+        "columns": [
+          "unique_products"
+        ],
+        "data": [
+          [
+            18
+          ]
+        ]
+      }
+    },
+    "n7": {
+      "id": "n7",
+      "question_id": "sum_010",
+      "question": "What is the standard deviation of amounts?",
+      "topic": "summary",
+      "table": "orcamento_de_materiais_para_ref_1, orcamento_de_materiais_para_ref_2",
+      "explored": false,
+      "children": [],
+      "summary": null,
+      "result": {
+        "columns": [
+          "stddev"
+        ],
+        "data": [
+          [
+            3341.6656713925468
+          ],
+          [
+            9238.30059872756
+          ]
+        ]
+      }
+    },
+    "n8": {
+      "id": "n8",
+      "question_id": "sum_011",
+      "question": "What is the median amount?",
+      "topic": "summary",
+      "table": "orcamento_de_materiais_para_ref_1, orcamento_de_materiais_para_ref_2",
+      "explored": false,
+      "children": [],
+      "summary": null,
+      "result": {
+        "columns": [
+          "median"
+        ],
+        "data": [
+          [
+            110.0
+          ],
+          [
+            14474.425
+          ]
+        ]
+      }
+    }
+  },
+  "roots": [
+    "n1",
+    "n2",
+    "n3",
+    "n4",
+    "n5",
+    "n6",
+    "n7",
+    "n8"
+  ],
+  "_next_id": 8
+}

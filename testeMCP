@@ -1,0 +1,3748 @@
+{
+  "conversation_id": "56170f5d-a824-48cb-b5d7-964bdaa381cb",
+  "next_message": null,
+  "history": [
+    {
+      "user": {
+        "additional_context": "",
+        "env_context": {
+          "env_state": {
+            "operating_system": "linux",
+            "current_working_directory": "/mnt/c/Users/jlortiz/Desktop/pesquisas/tableAgent",
+            "environment_variables": []
+          }
+        },
+        "content": {
+          "Prompt": {
+            "prompt": "leia o AGENT"
+          }
+        },
+        "timestamp": "2026-03-19T14:48:59.731741027-03:00",
+        "images": null
+      },
+      "assistant": {
+        "ToolUse": {
+          "message_id": "f9e367c7-660b-4384-879b-46bcff9593eb",
+          "content": "\n\nVou ler o arquivo AGENT do projeto.",
+          "tool_uses": [
+            {
+              "id": "tooluse_9Gaqjy8jU320y16bR93wBR",
+              "name": "glob",
+              "orig_name": "glob",
+              "args": {
+                "pattern": "**/AGENT*"
+              },
+              "orig_args": {
+                "pattern": "**/AGENT*"
+              }
+            }
+          ]
+        }
+      },
+      "request_metadata": {
+        "request_id": "b6164ba2-1a11-43a8-9aa6-d514726c89e7",
+        "context_usage_percentage": null,
+        "message_id": "f9e367c7-660b-4384-879b-46bcff9593eb",
+        "request_start_timestamp_ms": 1773942539737,
+        "stream_end_timestamp_ms": 1773942543945,
+        "time_to_first_chunk": {
+          "secs": 3,
+          "nanos": 224212606
+        },
+        "time_between_chunks": [
+          {
+            "secs": 0,
+            "nanos": 31550
+          },
+          {
+            "secs": 0,
+            "nanos": 17506303
+          },
+          {
+            "secs": 0,
+            "nanos": 40415030
+          },
+          {
+            "secs": 0,
+            "nanos": 109357513
+          },
+          {
+            "secs": 0,
+            "nanos": 49888944
+          },
+          {
+            "secs": 0,
+            "nanos": 49589736
+          },
+          {
+            "secs": 0,
+            "nanos": 272019575
+          },
+          {
+            "secs": 0,
+            "nanos": 24897
+          },
+          {
+            "secs": 0,
+            "nanos": 381841367
+          },
+          {
+            "secs": 0,
+            "nanos": 2645112
+          },
+          {
+            "secs": 0,
+            "nanos": 36759269
+          },
+          {
+            "secs": 0,
+            "nanos": 16497933
+          },
+          {
+            "secs": 0,
+            "nanos": 169432
+          },
+          {
+            "secs": 0,
+            "nanos": 7521259
+          }
+        ],
+        "user_prompt_length": 172,
+        "response_size": 61,
+        "chat_conversation_type": "ToolUse",
+        "tool_use_ids_and_names": [
+          [
+            "tooluse_9Gaqjy8jU320y16bR93wBR",
+            "glob"
+          ]
+        ],
+        "model_id": "auto",
+        "message_meta_tags": []
+      }
+    },
+    {
+      "user": {
+        "additional_context": "",
+        "env_context": {
+          "env_state": {
+            "operating_system": "linux",
+            "current_working_directory": "/mnt/c/Users/jlortiz/Desktop/pesquisas/tableAgent",
+            "environment_variables": []
+          }
+        },
+        "content": {
+          "ToolUseResults": {
+            "tool_use_results": [
+              {
+                "tool_use_id": "tooluse_9Gaqjy8jU320y16bR93wBR",
+                "content": [
+                  {
+                    "Json": {
+                      "filePaths": [
+                        "/mnt/c/Users/jlortiz/Desktop/pesquisas/tableAgent/AGENT_INSTRUCTIONS.md"
+                      ],
+                      "totalFiles": 1,
+                      "truncated": false
+                    }
+                  }
+                ],
+                "status": "Success"
+              }
+            ]
+          }
+        },
+        "timestamp": null,
+        "images": null
+      },
+      "assistant": {
+        "ToolUse": {
+          "message_id": "a22055a0-f106-4915-9afc-84c28d13b481",
+          "content": "",
+          "tool_uses": [
+            {
+              "id": "tooluse_RHtgaw2oqYP8fP3N7spzlT",
+              "name": "fs_read",
+              "orig_name": "fs_read",
+              "args": {
+                "operations": [
+                  {
+                    "mode": "Line",
+                    "path": "/mnt/c/Users/jlortiz/Desktop/pesquisas/tableAgent/AGENT_INSTRUCTIONS.md"
+                  }
+                ]
+              },
+              "orig_args": {
+                "operations": [
+                  {
+                    "mode": "Line",
+                    "path": "/mnt/c/Users/jlortiz/Desktop/pesquisas/tableAgent/AGENT_INSTRUCTIONS.md"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "request_metadata": {
+        "request_id": "3f81a365-bfdd-4dd7-b669-0abc1137605b",
+        "context_usage_percentage": null,
+        "message_id": "a22055a0-f106-4915-9afc-84c28d13b481",
+        "request_start_timestamp_ms": 1773942544052,
+        "stream_end_timestamp_ms": 1773942547216,
+        "time_to_first_chunk": {
+          "secs": 2,
+          "nanos": 294002825
+        },
+        "time_between_chunks": [
+          {
+            "secs": 0,
+            "nanos": 11542
+          },
+          {
+            "secs": 0,
+            "nanos": 4599
+          },
+          {
+            "secs": 0,
+            "nanos": 734120366
+          },
+          {
+            "secs": 0,
+            "nanos": 26905394
+          },
+          {
+            "secs": 0,
+            "nanos": 4433332
+          },
+          {
+            "secs": 0,
+            "nanos": 3207
+          },
+          {
+            "secs": 0,
+            "nanos": 5502519
+          },
+          {
+            "secs": 0,
+            "nanos": 4582457
+          },
+          {
+            "secs": 0,
+            "nanos": 3930738
+          },
+          {
+            "secs": 0,
+            "nanos": 443343
+          },
+          {
+            "secs": 0,
+            "nanos": 5512880
+          },
+          {
+            "secs": 0,
+            "nanos": 348533
+          },
+          {
+            "secs": 0,
+            "nanos": 1717296
+          },
+          {
+            "secs": 0,
+            "nanos": 3387
+          },
+          {
+            "secs": 0,
+            "nanos": 609550
+          },
+          {
+            "secs": 0,
+            "nanos": 1692520
+          },
+          {
+            "secs": 0,
+            "nanos": 2454
+          },
+          {
+            "secs": 0,
+            "nanos": 79535585
+          },
+          {
+            "secs": 0,
+            "nanos": 28084
+          },
+          {
+            "secs": 0,
+            "nanos": 6803
+          },
+          {
+            "secs": 0,
+            "nanos": 4359
+          },
+          {
+            "secs": 0,
+            "nanos": 6542
+          },
+          {
+            "secs": 0,
+            "nanos": 40577
+          }
+        ],
+        "user_prompt_length": 0,
+        "response_size": 114,
+        "chat_conversation_type": "ToolUse",
+        "tool_use_ids_and_names": [
+          [
+            "tooluse_RHtgaw2oqYP8fP3N7spzlT",
+            "fs_read"
+          ]
+        ],
+        "model_id": "auto",
+        "message_meta_tags": []
+      }
+    },
+    {
+      "user": {
+        "additional_context": "",
+        "env_context": {
+          "env_state": {
+            "operating_system": "linux",
+            "current_working_directory": "/mnt/c/Users/jlortiz/Desktop/pesquisas/tableAgent",
+            "environment_variables": []
+          }
+        },
+        "content": {
+          "ToolUseResults": {
+            "tool_use_results": [
+              {
+                "tool_use_id": "tooluse_RHtgaw2oqYP8fP3N7spzlT",
+                "content": [
+                  {
+                    "Text": "# MCP Tools — Agent Usage Guide\n\nYou have access to two MCP servers: **browser** (visual automation) and **dataflow** (code analysis). Use them together to understand complete systems: what the user sees on screen + what happens in the code.\n\n---\n\n## 1. Browser MCP\n\nBrowser automation via Playwright. Lets you see and interact with web applications.\n\n### Mandatory setup\nAlways call `set_project_dir` at the start of the session with the current working directory. Without this, `screenshot` won't work.\n\n### Tools\n\n| Tool | When to use |\n|---|---|\n| `set_project_dir(path)` | **First thing.** Sets where screenshots are saved. |\n| `navigate(url)` | Open a URL. Waits for `networkidle` by default. |\n| `screenshot()` | Capture the screen. Returns the file path. **Always read the file with `fs_read` mode `Image` afterwards.** |\n| `click(x, y)` | Click at coordinates. Use the previous screenshot to determine x,y. |\n| `type_text(text)` | Type into the focused element. |\n| `press_key(key)` | Special keys: Enter, Tab, Escape, ArrowDown, etc. |\n| `get_page_info()` | Current URL, title, viewport. Lightweight — use before screenshot when you only need the URL. |\n| `list_tabs()` | List open tabs. |\n| `switch_tab(index)` | Switch to a tab. |\n| `toggle_devtools()` | Open/close F12. |\n\n### Typical flow\n```\n1. set_project_dir(\"/path/to/project\")\n2. navigate(\"http://localhost:3000\")\n3. [user navigates manually]\n4. screenshot() → fs_read(Image) → describe the screen\n5. click(x, y) → screenshot() → fs_read(Image) → confirm result\n```\n\n### Rules\n- **Never** read the screenshot as base64 in context. Always use `fs_read` mode `Image`.\n- After each `click`, take a `screenshot` to confirm the result.\n- If the user needs to log in manually, use `navigate` to open the browser and wait for them to confirm.\n\n---\n\n## 2. Dataflow MCP\n\nMulti-language static code analysis. Builds a dependency graph using tree-sitter.\n\n### Supported languages\nJavaScript, TypeScript, Java, Python, PHP.\n\n### Auto-detected frameworks\nNext.js, Nuxt.js, Angular, Svelte, Vite, React, Vue, Express, Fastify, Spring Boot, Django, FastAPI, Flask, Laravel, Rails.\n\n### Tools\n\n| Tool | When to use |\n|---|---|\n| `index_project(path)` | **First thing.** Scans the project, detects frameworks, parses files, builds the graph. |\n| `set_framework(frameworks)` | Correct wrong detection. Comma-separated string: `\"nextjs,spring-boot\"`. Only use if the user requests a correction. |\n| `get_connections(file, symbol?)` | View a file's connections. Without `symbol`: shows signatures. With `symbol`: expands details (calls, lines). |\n| `trace_flow(entry, max_depth?)` | Trace data flow. Format: `\"file.tsx\"` or `\"file.tsx::functionName\"`. |\n\n### Typical flow\n```\n1. index_project(\"/path/to/project\")\n   → Returns detected frameworks + statistics\n2. Confirm frameworks with the user. Correct with set_framework if needed.\n3. get_connections(\"page.tsx\")\n   → View imports, dependents, symbol signatures\n4. get_connections(\"page.tsx\", \"MyFunction\")\n   → Expand: see calls, decorators, exact lines\n5. trace_flow(\"page.tsx::MyFunction\")\n   → Follow the flow: which functions are called, in which files\n```\n\n### Hierarchical graph\nThe graph is **hierarchical by design** to save context:\n- `get_connections(file)` → signatures only (lightweight)\n- `get_connections(file, symbol)` → details of a specific symbol\n- If you need the source code, use `fs_read` with the returned lines (`line_start`-`line_end`)\n\n### Rules\n- **Always** start with `index_project`. Without it, no other tool works.\n- Respect the hierarchy: start with the overview, expand on demand.\n- `trace_flow` defaults to `max_depth=6`. Increase if the flow goes deeper.\n- Files ignored by `.gitignore` and common patterns (node_modules, target, dist, etc.) are automatically excluded.\n\n---\n\n## Combined usage: Browser + Dataflow\n\nWhen the user wants to understand what happens when interacting with the application:\n\n```\n1. Browser: screenshot → identify the current page/route\n2. Dataflow: get_connections on the page/route file\n3. Dataflow: trace_flow to follow the data flow\n4. Dataflow: get_connections with symbol to expand specific functions\n5. fs_read with specific lines if you need to see the source code\n6. Browser: click to navigate → repeat\n```\n\nThis connects the **visual** (what the user sees) with the **code** (what happens underneath)."
+                  }
+                ],
+                "status": "Success"
+              }
+            ]
+          }
+        },
+        "timestamp": null,
+        "images": null
+      },
+      "assistant": {
+        "Response": {
+          "message_id": "84bf2e77-b9d6-44b6-a0b3-2d78480b5b62",
+          "content": "Aqui está o conteúdo do `AGENT_INSTRUCTIONS.md`:\n\nO arquivo é um guia de uso para dois servidores MCP disponíveis:\n\n**1. Browser MCP** — automação visual via Playwright:\n- `set_project_dir` → configurar diretório (obrigatório primeiro)\n- `navigate`, `screenshot`, `click`, `type_text`, `press_key` → interagir com a aplicação web\n- Regra: sempre usar `fs_read` modo `Image` para ler screenshots, nunca base64\n\n**2. Dataflow MCP** — análise estática de código com tree-sitter:\n- `index_project` → escanear projeto e construir grafo de dependências (obrigatório primeiro)\n- `get_connections` → ver conexões de um arquivo/símbolo (hierárquico: overview → detalhes)\n- `trace_flow` → rastrear fluxo de dados a partir de um ponto de entrada\n- Suporta JS, TS, Java, Python, PHP\n\n**Uso combinado**: conectar o visual (o que o usuário vê no browser) com o código (o que acontece por baixo) — screenshot para identificar a rota, depois `get_connections` e `trace_flow` para entender o fluxo.\n\nQuer que eu siga essas instruções para o teste end-to-end (task 4 do TODO)?"
+        }
+      },
+      "request_metadata": {
+        "request_id": "85c94d4d-5e10-41c4-990f-acd80e027897",
+        "context_usage_percentage": null,
+        "message_id": "84bf2e77-b9d6-44b6-a0b3-2d78480b5b62",
+        "request_start_timestamp_ms": 1773942547292,
+        "stream_end_timestamp_ms": 1773942557742,
+        "time_to_first_chunk": {
+          "secs": 3,
+          "nanos": 214600183
+        },
+        "time_between_chunks": [
+          {
+            "secs": 0,
+            "nanos": 10029
+          },
+          {
+            "secs": 0,
+            "nanos": 72151204
+          },
+          {
+            "secs": 0,
+            "nanos": 54469339
+          },
+          {
+            "secs": 0,
+            "nanos": 83613505
+          },
+          {
+            "secs": 0,
+            "nanos": 82790586
+          },
+          {
+            "secs": 0,
+            "nanos": 95967784
+          },
+          {
+            "secs": 0,
+            "nanos": 73370643
+          },
+          {
+            "secs": 0,
+            "nanos": 59833097
+          },
+          {
+            "secs": 0,
+            "nanos": 47116871
+          },
+          {
+            "secs": 0,
+            "nanos": 58742239
+          },
+          {
+            "secs": 0,
+            "nanos": 58244077
+          },
+          {
+            "secs": 0,
+            "nanos": 107587021
+          },
+          {
+            "secs": 0,
+            "nanos": 56140634
+          },
+          {
+            "secs": 0,
+            "nanos": 75014987
+          },
+          {
+            "secs": 0,
+            "nanos": 57366038
+          },
+          {
+            "secs": 0,
+            "nanos": 71000750
+          },
+          {
+            "secs": 0,
+            "nanos": 65744854
+          },
+          {
+            "secs": 0,
+            "nanos": 51750566
+          },
+          {
+            "secs": 0,
+            "nanos": 37717006
+          },
+          {
+            "secs": 0,
+            "nanos": 69751053
+          },
+          {
+            "secs": 0,
+            "nanos": 66811754
+          },
+          {
+            "secs": 0,
+            "nanos": 51659136
+          },
+          {
+            "secs": 0,
+            "nanos": 43984233
+          },
+          {
+            "secs": 0,
+            "nanos": 66788385
+          },
+          {
+            "secs": 0,
+            "nanos": 47716206
+          },
+          {
+            "secs": 0,
+            "nanos": 48954966
+          },
+          {
+            "secs": 0,
+            "nanos": 90057597
+          },
+          {
+            "secs": 0,
+            "nanos": 43954060
+          },
+          {
+            "secs": 0,
+            "nanos": 42073586
+          },
+          {
+            "secs": 0,
+            "nanos": 57795205
+          },
+          {
+            "secs": 0,
+            "nanos": 72110207
+          },
+          {
+            "secs": 0,
+            "nanos": 203252204
+          },
+          {
+            "secs": 0,
+            "nanos": 25319
+          },
+          {
+            "secs": 0,
+            "nanos": 41660993
+          },
+          {
+            "secs": 0,
+            "nanos": 153680191
+          },
+          {
+            "secs": 0,
+            "nanos": 81661831
+          },
+          {
+            "secs": 0,
+            "nanos": 76739753
+          },
+          {
+            "secs": 0,
+            "nanos": 74400894
+          },
+          {
+            "secs": 0,
+            "nanos": 44139119
+          },
+          {
+            "secs": 0,
+            "nanos": 37053246
+          },
+          {
+            "secs": 0,
+            "nanos": 45743139
+          },
+          {
+            "secs": 0,
+            "nanos": 37888004
+          },
+          {
+            "secs": 0,
+            "nanos": 85031378
+          },
+          {
+            "secs": 0,
+            "nanos": 67876693
+          },
+          {
+            "secs": 0,
+            "nanos": 46717754
+          },
+          {
+            "secs": 0,
+            "nanos": 36659388
+          },
+          {
+            "secs": 0,
+            "nanos": 38899220
+          },
+          {
+            "secs": 0,
+            "nanos": 34974574
+          },
+          {
+            "secs": 0,
+            "nanos": 31390814
+          },
+          {
+            "secs": 0,
+            "nanos": 43439301
+          },
+          {
+            "secs": 0,
+            "nanos": 32989740
+          },
+          {
+            "secs": 0,
+            "nanos": 83130080
+          },
+          {
+            "secs": 0,
+            "nanos": 77830561
+          },
+          {
+            "secs": 0,
+            "nanos": 44618740
+          },
+          {
+            "secs": 0,
+            "nanos": 96029274
+          },
+          {
+            "secs": 0,
+            "nanos": 54305395
+          },
+          {
+            "secs": 0,
+            "nanos": 173935374
+          },
+          {
+            "secs": 0,
+            "nanos": 51508759
+          },
+          {
+            "secs": 0,
+            "nanos": 84422391
+          },
+          {
+            "secs": 0,
+            "nanos": 78669991
+          },
+          {
+            "secs": 0,
+            "nanos": 70895822
+          },
+          {
+            "secs": 0,
+            "nanos": 60082838
+          },
+          {
+            "secs": 0,
+            "nanos": 60764244
+          },
+          {
+            "secs": 0,
+            "nanos": 159429701
+          },
+          {
+            "secs": 0,
+            "nanos": 113603375
+          },
+          {
+            "secs": 0,
+            "nanos": 89795411
+          },
+          {
+            "secs": 0,
+            "nanos": 110489114
+          },
+          {
+            "secs": 0,
+            "nanos": 100217571
+          },
+          {
+            "secs": 0,
+            "nanos": 67435016
+          },
+          {
+            "secs": 0,
+            "nanos": 78880232
+          },
+          {
+            "secs": 0,
+            "nanos": 124160880
+          },
+          {
+            "secs": 0,
+            "nanos": 73209891
+          },
+          {
+            "secs": 0,
+            "nanos": 51329857
+          },
+          {
+            "secs": 0,
+            "nanos": 69574030
+          },
+          {
+            "secs": 0,
+            "nanos": 55721865
+          },
+          {
+            "secs": 0,
+            "nanos": 95284700
+          },
+          {
+            "secs": 0,
+            "nanos": 70295941
+          },
+          {
+            "secs": 0,
+            "nanos": 55032330
+          },
+          {
+            "secs": 0,
+            "nanos": 58311095
+          },
+          {
+            "secs": 0,
+            "nanos": 180760633
+          },
+          {
+            "secs": 0,
+            "nanos": 89783303
+          },
+          {
+            "secs": 0,
+            "nanos": 72984789
+          },
+          {
+            "secs": 0,
+            "nanos": 55396780
+          },
+          {
+            "secs": 0,
+            "nanos": 44350942
+          },
+          {
+            "secs": 0,
+            "nanos": 44269789
+          },
+          {
+            "secs": 0,
+            "nanos": 36163189
+          },
+          {
+            "secs": 0,
+            "nanos": 66736981
+          },
+          {
+            "secs": 0,
+            "nanos": 51830663
+          },
+          {
+            "secs": 0,
+            "nanos": 58099354
+          },
+          {
+            "secs": 0,
+            "nanos": 40618659
+          },
+          {
+            "secs": 0,
+            "nanos": 54321991
+          },
+          {
+            "secs": 0,
+            "nanos": 59203548
+          },
+          {
+            "secs": 0,
+            "nanos": 45315563
+          },
+          {
+            "secs": 0,
+            "nanos": 65056601
+          },
+          {
+            "secs": 0,
+            "nanos": 49095125
+          },
+          {
+            "secs": 0,
+            "nanos": 48430629
+          },
+          {
+            "secs": 0,
+            "nanos": 104548852
+          },
+          {
+            "secs": 0,
+            "nanos": 51489804
+          },
+          {
+            "secs": 0,
+            "nanos": 46134543
+          },
+          {
+            "secs": 0,
+            "nanos": 39256447
+          },
+          {
+            "secs": 0,
+            "nanos": 42965924
+          },
+          {
+            "secs": 0,
+            "nanos": 48341935
+          },
+          {
+            "secs": 0,
+            "nanos": 52967452
+          },
+          {
+            "secs": 0,
+            "nanos": 82997715
+          },
+          {
+            "secs": 0,
+            "nanos": 106650735
+          },
+          {
+            "secs": 0,
+            "nanos": 154455422
+          },
+          {
+            "secs": 0,
+            "nanos": 6829712
+          }
+        ],
+        "user_prompt_length": 0,
+        "response_size": 1099,
+        "chat_conversation_type": "NotToolUse",
+        "tool_use_ids_and_names": [],
+        "model_id": "auto",
+        "message_meta_tags": []
+      }
+    },
+    {
+      "user": {
+        "additional_context": "",
+        "env_context": {
+          "env_state": {
+            "operating_system": "linux",
+            "current_working_directory": "/mnt/c/Users/jlortiz/Desktop/pesquisas/tableAgent",
+            "environment_variables": []
+          }
+        },
+        "content": {
+          "Prompt": {
+            "prompt": "teste utilizar o mcp, veja se ele te ajuda, e me dê o feedback, em especial do mcp dataflow"
+          }
+        },
+        "timestamp": "2026-03-19T14:49:59.159321306-03:00",
+        "images": null
+      },
+      "assistant": {
+        "ToolUse": {
+          "message_id": "62021ec8-bef4-47cc-b6d1-0217fb04461a",
+          "content": "\n\nVou testar os dois MCPs agora. Começando pelo Dataflow (indexar o projeto) e pelo Browser (configurar o diretório).",
+          "tool_uses": [
+            {
+              "id": "tooluse_AFUXgaG0JrahO7J7A5EmOS",
+              "name": "dummy",
+              "orig_name": "dummy",
+              "args": {},
+              "orig_args": {}
+            }
+          ]
+        }
+      },
+      "request_metadata": {
+        "request_id": "e27c8cbd-1955-4d92-ac5d-101069bb82b4",
+        "context_usage_percentage": 5.87,
+        "message_id": "62021ec8-bef4-47cc-b6d1-0217fb04461a",
+        "request_start_timestamp_ms": 1773942599164,
+        "stream_end_timestamp_ms": 1773942603364,
+        "time_to_first_chunk": {
+          "secs": 2,
+          "nanos": 955551543
+        },
+        "time_between_chunks": [
+          {
+            "secs": 0,
+            "nanos": 9168
+          },
+          {
+            "secs": 0,
+            "nanos": 65111674
+          },
+          {
+            "secs": 0,
+            "nanos": 48186455
+          },
+          {
+            "secs": 0,
+            "nanos": 48069770
+          },
+          {
+            "secs": 0,
+            "nanos": 54016382
+          },
+          {
+            "secs": 0,
+            "nanos": 62554023
+          },
+          {
+            "secs": 0,
+            "nanos": 46456706
+          },
+          {
+            "secs": 0,
+            "nanos": 50074184
+          },
+          {
+            "secs": 0,
+            "nanos": 51701713
+          },
+          {
+            "secs": 0,
+            "nanos": 50528579
+          },
+          {
+            "secs": 0,
+            "nanos": 38953351
+          },
+          {
+            "secs": 0,
+            "nanos": 50645703
+          },
+          {
+            "secs": 0,
+            "nanos": 50918011
+          },
+          {
+            "secs": 0,
+            "nanos": 53553324
+          },
+          {
+            "secs": 0,
+            "nanos": 55771742
+          },
+          {
+            "secs": 0,
+            "nanos": 50482343
+          },
+          {
+            "secs": 0,
+            "nanos": 55075479
+          },
+          {
+            "secs": 0,
+            "nanos": 198219743
+          },
+          {
+            "secs": 0,
+            "nanos": 8205
+          },
+          {
+            "secs": 0,
+            "nanos": 206316174
+          },
+          {
+            "secs": 0,
+            "nanos": 7414496
+          },
+          {
+            "secs": 0,
+            "nanos": 241
+          },
+          {
+            "secs": 0,
+            "nanos": 171
+          }
+        ],
+        "user_prompt_length": 252,
+        "response_size": 119,
+        "chat_conversation_type": "ToolUse",
+        "tool_use_ids_and_names": [
+          [
+            "tooluse_AFUXgaG0JrahO7J7A5EmOS",
+            "dummy"
+          ]
+        ],
+        "model_id": "auto",
+        "message_meta_tags": []
+      }
+    },
+    {
+      "user": {
+        "additional_context": "",
+        "env_context": {
+          "env_state": {
+            "operating_system": "linux",
+            "current_working_directory": "/mnt/c/Users/jlortiz/Desktop/pesquisas/tableAgent",
+            "environment_variables": []
+          }
+        },
+        "content": {
+          "ToolUseResults": {
+            "tool_use_results": [
+              {
+                "tool_use_id": "tooluse_AFUXgaG0JrahO7J7A5EmOS",
+                "content": [
+                  {
+                    "Text": "No tool with \"dummy\" is found"
+                  }
+                ],
+                "status": "Error"
+              }
+            ]
+          }
+        },
+        "timestamp": null,
+        "images": null
+      },
+      "assistant": {
+        "ToolUse": {
+          "message_id": "239200ca-6371-45f3-96b2-777d7981ea48",
+          "content": "Deixa eu verificar quais ferramentas MCP estão de fato disponíveis na sessão atual:",
+          "tool_uses": [
+            {
+              "id": "tooluse_NL4lz0O0AxFM2cwqhZ0GSA",
+              "name": "introspect",
+              "orig_name": "introspect",
+              "args": {
+                "query": "What MCP tools are available in this session?"
+              },
+              "orig_args": {
+                "query": "What MCP tools are available in this session?"
+              }
+            }
+          ]
+        }
+      },
+      "request_metadata": {
+        "request_id": "3afb1d35-8a7a-48f3-8fa3-b675e91d4402",
+        "context_usage_percentage": 5.929,
+        "message_id": "239200ca-6371-45f3-96b2-777d7981ea48",
+        "request_start_timestamp_ms": 1773942603419,
+        "stream_end_timestamp_ms": 1773942608137,
+        "time_to_first_chunk": {
+          "secs": 3,
+          "nanos": 805120659
+        },
+        "time_between_chunks": [
+          {
+            "secs": 0,
+            "nanos": 13175
+          },
+          {
+            "secs": 0,
+            "nanos": 7043
+          },
+          {
+            "secs": 0,
+            "nanos": 37082033
+          },
+          {
+            "secs": 0,
+            "nanos": 50940071
+          },
+          {
+            "secs": 0,
+            "nanos": 29719631
+          },
+          {
+            "secs": 0,
+            "nanos": 50493474
+          },
+          {
+            "secs": 0,
+            "nanos": 56705520
+          },
+          {
+            "secs": 0,
+            "nanos": 34329871
+          },
+          {
+            "secs": 0,
+            "nanos": 41960340
+          },
+          {
+            "secs": 0,
+            "nanos": 32463474
+          },
+          {
+            "secs": 0,
+            "nanos": 156630777
+          },
+          {
+            "secs": 0,
+            "nanos": 5593943
+          },
+          {
+            "secs": 0,
+            "nanos": 277270832
+          },
+          {
+            "secs": 0,
+            "nanos": 35300599
+          },
+          {
+            "secs": 0,
+            "nanos": 12458447
+          },
+          {
+            "secs": 0,
+            "nanos": 7018414
+          },
+          {
+            "secs": 0,
+            "nanos": 14600890
+          },
+          {
+            "secs": 0,
+            "nanos": 6230854
+          },
+          {
+            "secs": 0,
+            "nanos": 11866739
+          },
+          {
+            "secs": 0,
+            "nanos": 44913052
+          },
+          {
+            "secs": 0,
+            "nanos": 726543
+          },
+          {
+            "secs": 0,
+            "nanos": 6245323
+          }
+        ],
+        "user_prompt_length": 0,
+        "response_size": 144,
+        "chat_conversation_type": "ToolUse",
+        "tool_use_ids_and_names": [
+          [
+            "tooluse_NL4lz0O0AxFM2cwqhZ0GSA",
+            "introspect"
+          ]
+        ],
+        "model_id": "auto",
+        "message_meta_tags": []
+      }
+    },
+    {
+      "user": {
+        "additional_context": "",
+        "env_context": {
+          "env_state": {
+            "operating_system": "linux",
+            "current_working_directory": "/mnt/c/Users/jlortiz/Desktop/pesquisas/tableAgent",
+            "environment_variables": []
+          }
+        },
+        "content": {
+          "ToolUseResults": {
+            "tool_use_results": [
+              {
+                "tool_use_id": "tooluse_NL4lz0O0AxFM2cwqhZ0GSA",
+                "content": [
+                  {
+                    "Json": {
+                      "built_in_help": "Use any of these commands to manage your Kiro session. All commands start with '/'\n\nUsage: /<COMMAND>\n\nCommands:\n  quit        Quit the application\n  clear       Clear the conversation history\n  agent       Manage agents\n  chat        Manage saved conversations\n  context     Manage context files and view context window usage\n  code        Code intelligence with LSP integration - https://kiro.dev/docs/cli/code-intelligence/\n  editor      Open $EDITOR (defaults to vi) to compose a prompt\n  reply       Open $EDITOR with the most recent assistant message quoted for reply\n  compact     Summarize the conversation to free up context space\n  tools       View tools and permissions\n  issue       Create a new Github issue or make a feature request\n  logdump     Create a zip file with logs for support investigation\n  changelog   View changelog for Kiro CLI\n  prompts     View and retrieve prompts\n  hooks       View context hooks\n  usage       Show billing and credits information\n  mcp         See mcp server loaded\n  model       Select a model for the current conversation session\n  experiment  Toggle experimental features\n  plan        Switch to Plan agent for breaking down ideas into implementation plans. Use Shift+Tab to switch back to your previous agent\n  todos       View, manage, and resume to-do lists\n  paste       Paste an image from clipboard\n  help        Get help about Kiro CLI features and commands\n\nOptions:\n  -h, --help  Print help (see more with '--help')\n",
+                      "documentation": "\n\n--- Documentation for: What MCP tools are available in this session? ---\nThe following documentation is provided inline. DO NOT attempt to read files - all content is below.\n\n\n\n--- Document 1 ---\n--- doc_meta: validated: 2026-01-28 commit: 0fce279f status: validated testable_headless: false category: slash_command title: /mcp description: View MCP server status, authentication requirements, and available tools keywords: [mcp, servers, status, auth, tools] related: [cmd-mcp, agent-config] --- # /mcp See MCP server loaded and manage MCP servers. ## Overview The `/mcp` command displays status of MCP servers and provides subcommands to manage them. Shows server state, authentication requirements, available tools, and OAuth URLs if needed. ## Usage ``` /mcp [COMMAND] ``` ## Commands ### list (default) List all MCP servers (shows registry servers if configured by admin, or local configured servers). ``` /mcp /mcp list ``` ### add Add an MCP server from the registry (only available if a registry has been configured by admin). ``` /mcp add ``` ### remove Remove an enabled MCP server (only available if a registry has been configured by admin). ``` /mcp remove ``` ### help Print help message or help for specific subcommand. ``` /mcp help /mcp help <subcommand> ``` ## Options - `-h, --help` - Print help ## Output Shows for each server: - Server name and command - Status (initialized, loading, needs auth) - Available tools - OAuth URL (if authentication required) ## Related - [kiro-cli mcp](../commands/mcp.md) - Manage MCP servers - [Agent Configuration](../agent-config/overview.md) - Configure MCP servers ## Examples ### Example 1: View MCP Status (Default/List) ``` /mcp /mcp list ``` **Output**: ``` @git (mcp-server-git) Status: ✓ Initialized Tools: git_status, git_commit, git_log @github (mcp-server-github) Status: ⚠ Needs authentication OAuth URL: https://github.com/login/oauth/... Tools: (not loaded) ``` ### Example 2: Add MCP Server ``` /mcp add ``` **Output**: ``` Select MCP server to add: filesystem - File system operations database - Database connectivity web-scraper - Web scraping tools ``` ### Example 3: Remove MCP Server ``` /mcp remove ``` **Output**: ``` Select MCP server to remove: * @filesystem (enabled) * @database (enabled) @web-scraper (disabled) ``` ### Example 4: Get Help ``` /mcp help /mcp help add ``` **Output**: ``` Usage: /mcp add Add an MCP server from the registry ``` ## Troubleshooting ### Issue: Server Not Initialized **Symptom**: Server shows \"loading\" or \"needs auth\" **Cause**: Server starting or requires OAuth **Solution**: Wait for initialization or complete OAuth flow ### Issue: No Servers Shown **Symptom**: Empty output **Cause**: No MCP servers configured **Solution**: Add servers to agent configuration or use `kiro-cli mcp add` ### Issue: Tools Not Available **Symptom**: Server initialized but tools not working **Cause**: Server error or incompatible version **Solution**: Check server logs. Verify server version compatibility. ### Issue: Tool Excluded Due to Validation Error **Symptom**: Message \"The following tools have been excluded due to validation errors\" **Cause**: Tool fails validation requirements: - Tool name exceeds 64 characters (including server prefix) - Tool name contains invalid characters (must match `^[a-zA-Z][a-zA-Z0-9_]*$`) - Tool description is empty **Solution**: Contact MCP server maintainer to fix tool specification. ### Issue: Large Description Warning **Symptom**: Message \"The following tools have large descriptions which may impact agent performance\" **Cause**: Tool description exceeds 10,000 characters **Solution**: Tool still works but may slow down agent responses. Consider asking server maintainer to shorten description.\n\n--- Document 2 ---\n--- doc_meta: validated: 2026-02-03 commit: 1e26fbcf status: validated testable_headless: false category: command title: kiro-cli acp description: Start the Agent Client Protocol (ACP) agent for programmatic client integration keywords: [acp, agent-client-protocol, protocol, integration, api, headless] related: [chat, mcp] --- # kiro-cli acp Start the Agent Client Protocol (ACP) agent for programmatic client integration. ## Overview The `kiro-cli acp` command starts Kiro as an ACP-compliant agent that communicates over stdin/stdout using JSON-RPC. This enables programmatic integration with ACP clients like the Kiro TUI or custom tooling. ACP (Agent Client Protocol) is an open protocol that standardizes how clients communicate with AI agents. See [agentclientprotocol.com](https://agentclientprotocol.com/get-started/introduction) for the full specification. This command is used by the Kiro 2.0 TUI but can be invoked directly by any integration that supports ACP. ## Usage ```bash kiro-cli acp ``` The agent reads JSON-RPC messages from stdin and writes responses to stdout. Communication follows the ACP specification. ## Supported ACP Methods ### Core Protocol | Method | Description | |--------|-------------| | `initialize` | Initialize the connection and exchange capabilities | | `session/new` | Create a new chat session | | `session/load` | Load an existing session by ID | | `session/prompt` | Send a prompt to the agent | | `session/cancel` | Cancel the current operation | | `session/set_mode` | Switch agent mode (e.g., different agent configs) | | `session/set_model` | Change the model for the session | ### Agent Capabilities The Kiro ACP agent advertises these capabilities during initialization: - `loadSession: true` - Supports loading existing sessions - `promptCapabilities.image: true` - Supports image content in prompts ### Session Updates The agent sends these session update types via `session/notification`: | Update Type | Description | |-------------|-------------| | `AgentMessageChunk` | Streaming text/content from the agent | | `ToolCall` | Tool invocation with name, parameters, status | | `ToolCallUpdate` | Progress updates for running tools | | `TurnEnd` | Signals the agent turn has completed | ### Kiro Extensions Custom extension methods (prefixed with `_kiro.dev/` per ACP spec). These are currently used by the new Kiro TUI under development: | Method | Type | Description | |--------|------|-------------| | `_kiro.dev/commands/execute` | Request | Execute a slash command | | `_kiro.dev/commands/options` | Request | Get autocomplete options for a command | | `_kiro.dev/commands/available` | Notification | Lists available commands after session creation | | `_kiro.dev/mcp/oauth_request` | Notification | OAuth URL for MCP server authentication | | `_kiro.dev/mcp/server_initialized` | Notification | MCP server finished initializing | | `_kiro.dev/compaction/status` | Notification | Context compaction progress | | `_kiro.dev/clear/status` | Notification | Session clear status | | `_session/terminate` | Notification | Terminate a subagent session | ## Session Storage ACP sessions are persisted to disk at: ``` ~/.kiro/sessions/cli/ ``` Each session creates two files: - `<session-id>.json` - Session metadata and state - `<session-id>.jsonl` - Event log (conversation history) ## Logging ACP agent logs are written to the standard Kiro log location: - macOS: `$TMPDIR/kiro-log/kiro-chat.log` - Linux: `/tmp/kiro-log/logs/kiro-chat.log` Control log verbosity with environment variables: ```bash KIRO_LOG_LEVEL=debug kiro-cli acp KIRO_CHAT_LOG_FILE=/path/to/custom.log kiro-cli acp ``` ## Examples ### Example 1: Start ACP Agent ```bash kiro-cli acp ``` The agent waits for JSON-RPC messages on stdin. ## Related - [kiro-cli chat](chat.md) - Interactive chat (uses ACP internally) - [kiro-cli mcp](mcp.md) - MCP server management (MCP servers can be passed to ACP sessions) ## Technical Details - Protocol: JSON-RPC 2.0 over stdio - Transport: stdin (client→agent), stdout (agent→client) - Specification: ACP v2025-01-01 - Implementation: `sacp` Rust crate\n\n--- Document 3 ---\n--- doc_meta: validated: 2026-02-10 commit: 69e517e1 status: validated testable_headless: true category: feature title: Agent Configuration description: Complete guide to agent configuration format including tools, settings, resources, hooks, and MCP servers keywords: [agent, configuration, json, tools, settings, resources, hooks, mcp, keyboardShortcut, welcomeMessage, skill] related: [cmd-agent, slash-agent, slash-agent-generate] --- # Agent Configuration Complete guide to agent configuration format including tools, settings, resources, hooks, and MCP servers. ## Overview Agent configurations are JSON files that define agent behavior, available tools, context files, and integrations. Stored in `.kiro/agents/` (local) or `~/.kiro/agents/` (global). Filename (without `.json`) becomes agent name. ## File Location **Local (workspace)**: `.kiro/agents/<name>.json` **Global (user-wide)**: `~/.kiro/agents/<name>.json` Local agents take precedence over global with same name. ## Basic Structure ```json { \"name\": \"my-agent\", \"description\": \"Agent description\", \"prompt\": \"System prompt or file:///path/to/prompt.txt\", \"tools\": [\"fs_read\", \"fs_write\", \"execute_bash\"], \"allowedTools\": [\"fs_read\", \"grep\"], \"toolsSettings\": { \"fs_write\": { \"allowedPaths\": [\"~/projects/**\"] } }, \"resources\": [\"src/**/*.rs\", \"Cargo.toml\"], \"hooks\": { \"agentSpawn\": { \"command\": \"git status\", \"description\": \"Show git status\" } }, \"mcpServers\": { \"git\": { \"command\": \"mcp-server-git\", \"args\": [\"--stdio\"] } } } ``` ## Fields ### name Agent name for identification. ```json { \"name\": \"rust-expert\" } ``` ### description Human-readable description. ```json { \"description\": \"Rust development expert with cargo and testing tools\" } ``` ### prompt System prompt that defines agent behavior and expertise (inline text or file URI). ```json { \"prompt\": \"You are a Rust expert focused on safety, performance, and idiomatic code. Help with debugging, optimization, and best practices.\" } ``` **Use cases**: - Define agent personality and expertise area - Set specific instructions for code style or approach - Reference external prompt files for complex instructions - Customize response tone and format preferences Or reference file: ```json { \"prompt\": \"file:///home/user/.kiro/prompts/rust-expert.txt\" } ``` ### tools Available tools for agent. ```json { \"tools\": [\"fs_read\", \"fs_write\", \"execute_bash\", \"grep\", \"code\"] } ``` ### allowedTools Tools auto-approved without prompts. Supports exact matches and wildcard patterns. ```json { \"allowedTools\": [ \"fs_read\", \"fs_*\", \"@git/git_status\", \"@server/read_*\", \"@fetch\" ] } ``` **Exact Matches**: - Built-in tools: `\"fs_read\"`, `\"execute_bash\"` - Specific MCP tools: `\"@server_name/tool_name\"` - All tools from server: `\"@server_name\"` **Wildcard Patterns** (using `*` and `?`): - Prefix: `\"fs_*\"` → matches `fs_read`, `fs_write` - Suffix: `\"*_bash\"` → matches `execute_bash` - Middle: `\"fs_*_tool\"` → matches `fs_read_tool` - Single char: `\"fs_?ead\"` → matches `fs_read`, `fs_head` - MCP tool: `\"@server/read_*\"` → matches `@server/read_file`, `@server/read_config` - MCP server: `\"@git-*/*\"` → matches any tool from servers matching `git-*` **Special**: - `\"@builtin\"` → All built-in tools - `\"*\"` → NOT supported in allowedTools (use in tools field only) ### toolsSettings Tool-specific configuration. ```json { \"toolsSettings\": { \"fs_write\": { \"allowedPaths\": [\"~/projects/**\"], \"deniedPaths\": [\"/etc/**\"] }, \"execute_bash\": { \"allowedCommands\": [\"git status\", \"cargo check\"], \"autoAllowReadonly\": true } } } ``` ### resources Context files loaded into agent context. Supports `file://` and `skill://` URI schemes. ```json { \"resources\": [ \"file://README.md\", \"file://src/**/*.rs\", \"file://Cargo.toml\", \"skill://.kiro/skills/**/SKILL.md\" ] } ``` **URI Schemes**: - `file://` - Files always loaded into context - `skill://` - Skills progressively loaded on demand **Both support**: - Specific paths: `file://README.md` or `skill://my-skill.md` - Glob patterns: `file://src/**/*.rs` or `skill://.kiro/skills/**/SKILL.md` - Absolute or relative paths **Skills**: A skill is a resource whose metadata (name, description, path) is loaded at startup, with full content loaded on demand. Skill files must begin with YAML frontmatter: ```markdown --- name: dynamodb-data-modeling description: Guide for DynamoDB data modeling best practices. Use when designing or analyzing DynamoDB schema. --- ``` ``` ### hooks Commands executed at trigger points. ```json { \"hooks\": { \"agentSpawn\": [ { \"command\": \"git status\", \"description\": \"Show repository status\" } ], \"userPromptSubmit\": [ { \"command\": \"date\", \"description\": \"Current timestamp\" } ], \"preToolUse\": [ { \"matcher\": \"fs_write\", \"command\": \"git diff\", \"description\": \"Show changes before write\" } ], \"postToolUse\": [ { \"matcher\": \"execute_bash\", \"command\": \"echo 'Command executed'\", \"description\": \"Log after execution\" } ], \"stop\": [ { \"command\": \"echo 'Response complete'\", \"description\": \"Log completion\" } ] } } ``` **Hook Triggers**: - `agentSpawn`: When agent initializes - `userPromptSubmit`: When user submits message - `preToolUse`: Before tool execution (can block) - `postToolUse`: After tool execution - `stop`: When assistant finishes responding **Hook Fields**: - `command` (required): Command to execute - `matcher` (optional): Pattern for preToolUse/postToolUse - `description` (optional): Human-readable description ### toolAliases Remap tool names to resolve collisions. ```json { \"toolAliases\": { \"@github-mcp/get_issues\": \"github_issues\", \"@gitlab-mcp/get_issues\": \"gitlab_issues\" } } ``` Useful when multiple MCP servers provide tools with same name. ### useLegacyMcpJson Include MCP servers from legacy config files. ```json { \"useLegacyMcpJson\": true } ``` Loads servers from `~/.aws/amazonq/mcp.json` (global) and `.amazonq/mcp.json` (workspace). ### model Specify model ID for agent. ```json { \"model\": \"<model-id>\" } ``` If not specified, uses default model. Falls back to default if model unavailable. ### mcpServers MCP server configurations. ```json { \"mcpServers\": { \"git\": { \"command\": \"mcp-server-git\", \"args\": [\"--stdio\"], \"env\": { \"GIT_DIR\": \"/path/to/repo\" }, \"timeout\": 120000 } } } ``` **MCP Server Fields**: - `command` (required): Command to start server - `args` (optional): Command arguments - `env` (optional): Environment variables - `timeout` (optional): Request timeout in milliseconds (default: 120000) - `disabled` (optional): Set to `true` to skip loading this server (default: false) ### toolAliases Remap tool names to resolve naming collisions. ```json { \"toolAliases\": { \"@github-mcp/get_issues\": \"github_issues\", \"@gitlab-mcp/get_issues\": \"gitlab_issues\", \"@aws-tools/deploy_stack\": \"deploy\" } } ``` Use when multiple MCP servers provide tools with same name, or to create shorter names. ### useLegacyMcpJson Include MCP servers from legacy configuration files. ```json { \"useLegacyMcpJson\": true } ``` **Alias**: `includeMcpJson` When `true`, loads MCP servers from: - Global: `~/.aws/amazonq/mcp.json` - Workspace: `.amazonq/mcp.json` Tools from legacy servers can be referenced same as servers in `mcpServers` field. ### model Specify model ID for this agent. ```json { \"model\": \"<model-id>\" } ``` If not specified, uses default model. Falls back to default if specified model unavailable. ### keyboardShortcut Keyboard shortcut for quickly switching to this agent during a chat session. ```json { \"keyboardShortcut\": \"ctrl+shift+a\" } ``` **Format**: Modifiers and key separated by `+` **Modifiers** (optional, can combine): - `ctrl` - Control key - `shift` - Shift key - `alt` - Alt key (Option on Mac) **Keys**: - Letters: `a-z` (case insensitive) - Digits: `0-9` - Function keys: `f1-f12` - Special: `tab` **Examples**: ```json \"keyboardShortcut\": \"ctrl+a\" // Control + A \"keyboardShortcut\": \"ctrl+shift+b\" // Control + Shift + B \"keyboardShortcut\": \"alt+f1\" // Alt + F1 \"keyboardShortcut\": \"shift+tab\" // Shift + Tab ``` **Toggle Behavior**: Pressing shortcut while already on this agent switches back to previous agent. **Conflicts**: If multiple agents have same shortcut, warning is logged and shortcut disabled. ### welcomeMessage Message displayed when switching to this agent. ```json { \"welcomeMessage\": \"What would you like to build today?\" } ``` Appears after agent switch confirmation to orient users to agent's purpose. ## Complete Example ```json { \"name\": \"rust-dev\", \"description\": \"Rust development agent with full toolset\", \"prompt\": \"You are an expert Rust developer. Focus on safety, performance, and idiomatic code.\", \"tools\": [ \"fs_read\", \"fs_write\", \"execute_bash\", \"grep\", \"glob\", \"code\" ], \"allowedTools\": [ \"fs_read\", \"grep\", \"glob\" ], \"toolsSettings\": { \"fs_write\": { \"allowedPaths\": [\"~/rust-projects/**\"], \"deniedPaths\": [\"~/.cargo/**\"] }, \"execute_bash\": { \"allowedCommands\": [ \"cargo check\", \"cargo test\", \"cargo build\" ], \"autoAllowReadonly\": true } }, \"resources\": [ \"file://src/**/*.rs\", \"file://Cargo.toml\", \"skill://.kiro/skills/**/SKILL.md\" ], \"hooks\": { \"agentSpawn\": [ { \"command\": \"cargo --version && rustc --version\", \"description\": \"Show Rust toolchain versions\" } ], \"stop\": [ { \"command\": \"echo 'Response complete'\", \"description\": \"Log completion\" } ] }, \"mcpServers\": { \"git\": { \"command\": \"mcp-server-git\", \"args\": [\"--stdio\"] } }, \"keyboardShortcut\": \"ctrl+shift+r\", \"welcomeMessage\": \"Ready to help with Rust development!\" } ``` ## Creating Agents ### Method 1: AI Generation ``` /agent generate ``` Interactive process with AI assistance. ### Method 2: CLI Command ```bash kiro-cli agent create --name my-agent ``` Creates example configuration. ### Method 3: Manual Creation Create `.kiro/agents/my-agent.json` with desired configuration. ## Validation ```bash kiro-cli agent validate --path ~/.kiro/agents/my-agent.json ``` Checks JSON syntax and schema compliance. ## Examples ### Example 1: Simple File Reader Agent ```json { \"name\": \"reader\", \"description\": \"Read-only agent for browsing code\", \"tools\": [\"fs_read\", \"grep\", \"glob\"], \"allowedTools\": [\"fs_read\", \"grep\", \"glob\"], \"resources\": [\"src/**/*\", \"README.md\"] } ``` ### Example 2: Rust Development Agent ```json { \"name\": \"rust-dev\", \"description\": \"Rust development with testing\", \"prompt\": \"You are a Rust expert. Focus on safety and performance.\", \"tools\": [\"fs_read\", \"fs_write\", \"execute_bash\", \"code\"], \"allowedTools\": [\"fs_read\", \"code\"], \"toolsSettings\": { \"fs_write\": { \"allowedPaths\": [\"src/**\", \"tests/**\"], \"deniedPaths\": [\"target/**\"] }, \"execute_bash\": { \"allowedCommands\": [\"cargo check\", \"cargo test\", \"cargo build\"], \"autoAllowReadonly\": true } }, \"resources\": [\"src/**/*.rs\", \"Cargo.toml\"], \"hooks\": { \"agentSpawn\": { \"command\": \"cargo --version\", \"description\": \"Show Rust version\" } } } ``` ### Example 3: AWS Operations Agent ```json { \"name\": \"aws-ops\", \"description\": \"AWS operations and management\", \"tools\": [\"use_aws\", \"fs_read\", \"execute_bash\"], \"toolsSettings\": { \"use_aws\": { \"allowedServices\": [\"s3\", \"lambda\", \"ec2\"], \"autoAllowReadonly\": true } } } ``` ### Example 4: Agent with MCP Servers ```json { \"name\": \"full-stack\", \"description\": \"Full-stack development with git integration\", \"tools\": [\"fs_read\", \"fs_write\", \"execute_bash\", \"code\"], \"mcpServers\": { \"git\": { \"command\": \"mcp-server-git\", \"args\": [\"--stdio\"] }, \"github\": { \"command\": \"mcp-server-github\", \"args\": [\"--stdio\"], \"env\": { \"GITHUB_TOKEN\": \"$GITHUB_TOKEN\" } } } } ``` ## Troubleshooting ### Issue: Agent Not Found **Symptom**: \"Agent not found\" error **Cause**: Agent file doesn't exist or invalid name **Solution**: Check file exists in `.kiro/agents/` or `~/.kiro/agents/`. Use `kiro-cli agent list`. ### Issue: Invalid JSON **Symptom**: \"Json supplied is invalid\" error **Cause**: Syntax error in JSON **Solution**: Validate JSON syntax. Use `kiro-cli agent validate <name>` for details. ### Issue: Schema Mismatch **Symptom**: \"Agent config is malformed\" error **Cause**: JSON doesn't match agent schema **Solution**: Check required fields. Use `kiro-cli agent schema` to see format. ### Issue: Tool Not Available **Symptom**: Tool in config but not working **Cause**: Tool name incorrect or MCP server not loaded **Solution**: Check tool name spelling. For MCP tools, ensure server configured. ### Issue: MCP Tool Validation Warning **Symptom**: Warning shows \"Agent config specifies X unavailable tools from @server\" **Cause**: Agent configuration requests tools that don't exist on the MCP server **Example Warning**: ``` WARNING: Agent config specifies 2 unavailable tools from @github: get_isues, list_prs Did you mean: get_issues, list_pulls? Available tools from @github: get_issues, list_pulls, create_issue, ... ``` **Solution**: - Check tool name spelling (typos are common) - Use the fuzzy-match suggestions provided in the warning - Run `/tools` to see all available tools from MCP servers - Update agent config with correct tool names ### Issue: Glob Pattern Not Matching **Symptom**: Resources not loading files **Cause**: Invalid glob pattern **Solution**: Test pattern. Use `**` for recursive, `*` for single level. ### Issue: Hook Not Executing **Symptom**: Hook command not running **Cause**: Invalid command or permission issue **Solution**: Test command in terminal first. Check command exists and is executable. ### Issue: MCP Server Won't Start **Symptom**: MCP tools not available **Cause**: Server command not found or configuration error **Solution**: Verify server installed. Check command path and args. ### Issue: Local Agent Not Overriding Global **Symptom**: Global agent used instead of local **Cause**: Names don't match exactly **Solution**: Ensure filenames match exactly (case-sensitive). ### Issue: Tool Settings Not Applied **Symptom**: Tool permissions not working as configured **Cause**: Tool name mismatch in toolsSettings **Solution**: Use exact tool name. For MCP: `@server-name/tool-name`. ### Issue: Prompt File Not Found **Symptom**: Error loading prompt from file URI **Cause**: Invalid file path **Solution**: Use absolute path with `file://` prefix. Verify file exists. ## Related - [kiro-cli agent](../commands/agent.md) - Manage agents - [/agent](../slash-commands/agent-switch.md) - Switch agents - [/agent generate](../slash-commands/agent-generate.md) - Generate with AI - [Hooks](../features/hooks.md) - Hook system details\n\n--- Document 4 ---\n--- doc_meta: validated: 2026-02-05 commit: b67eac21 status: validated testable_headless: true category: command title: kiro-cli chat description: Start AI assistant session with support for agents, models, tool trust, and conversation management keywords: [chat, conversation, agent, model, interactive, headless, mcp, require-mcp-startup, log, logging, history, KIRO_LOG_NO_COLOR] related: [slash-chat-save, slash-chat-load, slash-agent, exit-codes] --- # kiro-cli chat Start AI assistant session with support for agents, models, tool trust, and conversation management. ## Overview The chat command launches an interactive AI assistant session. Supports agent selection, model choice, tool trust configuration, conversation resumption, and headless mode for automation. Primary interface for interacting with Kiro CLI. ## Usage ### Basic Usage ```bash kiro-cli chat ``` ### Common Use Cases #### Use Case 1: Start Interactive Session ```bash kiro-cli chat ``` **What this does**: Launches interactive chat session with default agent and model. #### Use Case 2: Start with Specific Agent ```bash kiro-cli chat --agent rust-expert ``` **What this does**: Starts session using rust-expert agent configuration. #### Use Case 3: Headless Mode with Query ```bash kiro-cli chat --no-interactive \"List all Rust files in src/\" ``` **What this does**: Executes single query non-interactively and exits. #### Use Case 4: Trust All Tools ```bash kiro-cli chat --trust-all-tools \"Run tests and analyze results\" ``` **What this does**: Allows agent to use any tool without approval prompts. #### Use Case 5: Trust Specific Tools ```bash kiro-cli chat --trust-tools=fs_read,grep \"Find all TODOs\" ``` **What this does**: Auto-approves only fs_read and grep tools. #### Use Case 6: Resume Last Conversation ```bash kiro-cli chat --resume ``` **What this does**: Resumes most recent conversation from current directory. #### Use Case 7: Select Conversation to Resume ```bash kiro-cli chat --resume-picker ``` **What this does**: Shows interactive picker to select conversation to resume. ## Options | Option | Short | Type | Description | |--------|-------|------|-------------| | `--resume` | `-r` | flag | Resume most recent conversation | | `--resume-picker` | | flag | Interactively select conversation to resume | | `--agent` | | string | Agent to use (default: default agent) | | `--model` | | string | Model to use (default: default model) | | `--trust-all-tools` | `-a` | flag | Auto-approve all tool uses | | `--trust-tools` | | list | Auto-approve specific tools (comma-separated) | | `--no-interactive` | | flag | Run without user input (headless mode) | | `--list-sessions` | `-l` | flag | List saved conversations | | `--delete-session` | `-d` | string | Delete conversation by ID | | `--wrap` | `-w` | enum | Line wrapping (always/never/auto) | | `--require-mcp-startup` | | flag | Exit with code 3 if any MCP server fails to start | | `--verbose` | `-v` | flag | Increase logging verbosity (can be repeated) | | `--help` | `-h` | flag | Print help information | | `[INPUT]` | | string | Initial query to send | ## Examples ### Example 1: Quick Query ```bash kiro-cli chat \"What files are in the current directory?\" ``` ### Example 2: Automated Script ```bash kiro-cli chat --no-interactive --trust-all-tools \"Run cargo test and summarize results\" ``` ### Example 3: Specific Model ```bash kiro-cli chat --model <model-id> \"Explain this codebase\" ``` ### Example 4: List Conversations ```bash kiro-cli chat --list-sessions ``` **Expected Output**: ``` Chat sessions for /path/to/project: Chat SessionId: f2946a26-3735-4b08-8d05-c928010302d5 2 hours ago | Implement user authentication | 15 msgs Chat SessionId: 7bd2c90f-7080-4981-87f7-206d9147878f 1 days ago | Refactor database layer | 23 msgs To delete a session, use: kiro-cli chat --delete-session <SESSION_ID> ``` ### Example 5: Delete Conversation ```bash kiro-cli chat --delete-session abc123 ``` **Expected Output**: ``` ✔ Deleted chat session abc123 ``` ### Example 6: Require MCP Servers ```bash kiro-cli chat --require-mcp-startup --no-interactive \"Run analysis\" ``` **What this does**: Exits with code 3 if any configured MCP server fails to start. Useful for CI/CD pipelines. ## Headless Mode Use `--no-interactive` for automation and scripts: **Requirements**: - Must provide initial query as argument - Use `--trust-all-tools` or `--trust-tools` to avoid hanging on tool approvals - Interactive slash commands won't work (/experiment, /model picker, /agent picker) - No mid-session user input possible **What Works**: - Natural language queries - Tool invocations (with trust flags) - Informational slash commands (/help, /tools) - Settings via `kiro-cli settings` command **What Doesn't Work**: - Interactive slash commands requiring selection - Tool approval prompts (will hang) - Mid-session confirmations - Terminal UI features ## Troubleshooting ### Issue: Tool Approval Hangs in Headless Mode **Symptom**: Command hangs waiting for input **Cause**: Tool requires approval but no interactive input available **Solution**: Use `--trust-all-tools` or `--trust-tools=tool1,tool2` ### Issue: Can't Resume Conversation **Symptom**: --resume shows no conversations **Cause**: No saved conversations in current directory **Solution**: Conversations are directory-specific. Use `/chat save` to save conversations. ### Issue: Agent Not Found **Symptom**: Error about agent not existing **Cause**: Specified agent doesn't exist **Solution**: Check agent name. Use `kiro-cli agent list` to see available agents. ### Issue: Interactive Command Fails in Headless **Symptom**: Error \"not a terminal\" **Cause**: Interactive slash command used in headless mode **Solution**: Use direct CLI commands instead (e.g., `kiro-cli settings` instead of `/experiment`) ### Issue: MCP Server Startup Failure **Symptom**: Exit code 3 with `--require-mcp-startup` **Cause**: One or more MCP servers failed to start **Solution**: Check MCP server configuration. Verify server paths and dependencies are correct. ## Related Features - [/chat save](../slash-commands/chat-save.md) - Save conversations - [/chat load](../slash-commands/chat-load.md) - Load conversations - [/agent](../slash-commands/agent-switch.md) - Switch agents mid-session - [kiro-cli agent](agent.md) - Manage agent configurations - [kiro-cli settings](settings.md) - Configure behavior ## Limitations - Conversations saved per-directory - Headless mode doesn't support interactive commands - Tool trust applies to entire session - Can't change trust settings mid-session - Resume only works for conversations in current directory ## Technical Details **Aliases**: `chat` (default command if no subcommand specified) **Conversation Storage**: Saved in database, scoped to current directory path. **Agent Resolution**: Local agents (`.kiro/agents/`) take precedence over global (`~/.kiro/agents/`). **Model Selection**: Uses specified model or default from settings. Can be changed mid-session with `/model`. **Tool Trust**: - `--trust-all-tools`: Bypasses all tool approval prompts - `--trust-tools=`: Empty list trusts no tools - `--trust-tools=a,b`: Trusts only tools a and b - Without flags: Prompts for each tool use (unless in agent's allowedTools) **Headless Mode**: Sets non-interactive flag, disables terminal UI, requires initial query. **Line Wrapping**: Auto-detects terminal width. Override with `--wrap always` or `--wrap never`. **Keyboard Shortcuts**: - `Ctrl+R`: Search command history (case-insensitive) - `Ctrl+C`: Cancel current operation or exit - `Ctrl+T`: Toggle tangent mode (if enabled) - `Up/Down`: Navigate command history **Logging**: Chat sessions write logs to platform-specific locations: - **macOS**: `$TMPDIR/kiro-log/kiro-chat.log` - **Linux**: `$XDG_RUNTIME_DIR/kiro-log/kiro-chat.log` - **Windows**: `%TEMP%/kiro-log/logs/kiro-chat.log` Override with `KIRO_CHAT_LOG_FILE` environment variable: ```bash KIRO_CHAT_LOG_FILE=/tmp/my-debug.log kiro-cli chat ``` Disable ANSI colors in log output with `KIRO_LOG_NO_COLOR`: ```bash KIRO_LOG_NO_COLOR=1 kiro-cli chat ```\n\n--- Document 5 ---\n--- doc_meta: validated: 2025-12-22 commit: 57090ffe status: validated testable_headless: false category: feature title: MCP Registry description: Enterprise MCP server governance allowing administrators to control which servers users can access keywords: [mcp, registry, governance, enterprise, admin, pro] related: [cmd-mcp, slash-mcp, agent-configuration] --- # MCP Registry Enterprise MCP server governance allowing administrators to control which servers users can access. ## Overview Pro-tier customers using IAM Identity Center can have MCP server access controlled through an MCP registry. When configured by administrators, users can only use MCP servers explicitly allowed in the registry. Provides centralized governance for enterprise deployments. ## How It Works **Without Registry** (default): - Users can add any MCP server - Servers configured in agent files or via CLI - No central control **With Registry** (enterprise): - Administrator configures allowed servers - Users select from registry list - Cannot add custom servers - Centralized governance and security ## Adding Servers (Registry Mode) ### In Chat ``` /mcp add ``` Shows interactive list of servers from organization's registry. ### In CLI ```bash # Add specific server kiro-cli mcp add --name myserver # Add to workspace kiro-cli mcp add --scope workspace # Add to specific agent kiro-cli mcp add --agent myagent # Interactive selection kiro-cli mcp add ``` **Note**: Server name must match registry. Cannot add custom servers. ## Removing Servers ### In Chat ``` /mcp remove ``` Interactive menu to select server to remove. ### In CLI ```bash kiro-cli mcp remove --name <server-name> ``` ## Viewing Available Servers ### In Chat ``` /mcp list ``` Shows: - All locally configured MCP servers - Server status and configuration - Available tools from each server ## Customization (Registry Mode) Even with registry, you can customize: ### Local (stdio) Servers - Environment variables (API keys, paths) - Request timeout - Server scope (Global/Workspace/Agent) - Tool trust settings ### Remote (HTTP) Servers - HTTP headers (authentication tokens) - Request timeout - Server scope - Tool trust settings **Custom values override registry defaults**, allowing personal credentials and configuration. ## Examples ### Example 1: Add Registry Server ``` /mcp add ``` **Output**: ``` Select MCP server from registry: git-server (Git operations) github-server (GitHub integration) aws-tools (AWS operations) ``` ### Example 2: Add to Specific Agent ```bash kiro-cli mcp add --name git-server --agent rust-dev ``` Adds git-server to rust-dev agent configuration. ### Example 3: Customize with Environment Variables ```json { \"mcpServers\": { \"github\": { \"command\": \"mcp-server-github\", \"args\": [\"--stdio\"], \"env\": { \"GITHUB_TOKEN\": \"$GITHUB_TOKEN\" } } } } ``` Your token overrides registry defaults. ## Troubleshooting ### Issue: \"MCP functionality has been disabled by your administrator\" **Symptom**: Cannot use MCP at all **Cause**: Organization disabled MCP entirely **Solution**: Contact administrator for MCP access ### Issue: \"Failed to retrieve MCP settings\" **Symptom**: Error fetching MCP configuration **Cause**: Network issue or server error **Solution**: Temporary issue - retry later or contact administrator ### Issue: Cannot Add Custom Server **Symptom**: Server not in list **Cause**: Registry mode only allows registry servers **Solution**: Request administrator add server to registry ### Issue: Server Not in Registry **Symptom**: Needed server not available **Cause**: Not added to organization's registry **Solution**: Contact administrator to request server addition ## Related Features - [kiro-cli mcp](../commands/mcp.md) - MCP management commands - [/mcp](../slash-commands/mcp.md) - View MCP status - [Agent Configuration](agent-configuration.md) - Configure MCP servers in agents ## Limitations - Registry mode only for Pro-tier with IAM Identity Center - Cannot add servers not in registry - Administrator controls available servers - Custom servers not allowed in registry mode ## Technical Details **Registry Source**: Configured by administrator at organization level **Scope Options**: - Global: `~/.kiro/settings/mcp.json` - Workspace: `.kiro/settings/mcp.json` - Agent-specific: In agent configuration **Customization**: Environment variables and HTTP headers can be customized even in registry mode **Fallback**: If registry unavailable, MCP functionality disabled **Documentation**: For administrators, see [MCP Governance Documentation](https://kiro.dev/docs/cli/mcp/governance/)\n\n--- Available Settings ---\nKIRO CLI supports these configuration settings (use `kiro-cli settings` command from terminal, NOT /settings):\n\n• telemetry.enabled - Enable/disable telemetry collection (boolean)\n• telemetryClientId - Legacy client identifier for telemetry (string)\n• codeWhisperer.shareCodeWhispererContentWithAWS - Share content with CodeWhisperer service (boolean)\n• chat.enableThinking - Enable thinking tool for complex reasoning (boolean)\n• chat.enableKnowledge - Enable knowledge base functionality (boolean)\n• chat.enableCodeIntelligence - Enable code intelligence with LSP integration (boolean)\n• knowledge.defaultIncludePatterns - Default file patterns to include in knowledge base (array)\n• knowledge.defaultExcludePatterns - Default file patterns to exclude from knowledge base (array)\n• knowledge.maxFiles - Maximum number of files for knowledge indexing (number)\n• knowledge.chunkSize - Text chunk size for knowledge processing (number)\n• knowledge.chunkOverlap - Overlap between text chunks (number)\n• knowledge.indexType - Type of knowledge index to use (string)\n• chat.skimCommandKey - Key binding for fuzzy search command (single character)\n• chat.autocompletionKey - Key binding for autocompletion hint acceptance (single character)\n• chat.enableTangentMode - Enable tangent mode feature (boolean)\n• chat.tangentModeKey - Key binding for tangent mode toggle (single character)\n• chat.enableSubagent - Enable subagent feature (boolean)\n• chat.delegateModeKey - Key binding for delegate command (single character)\n• introspect.tangentMode - Auto-enter tangent mode for introspect questions (boolean)\n• introspect.progressiveMode - Use progressive loading instead of semantic search for introspect (boolean)\n• chat.greeting.enabled - Show greeting message on chat start (boolean)\n• api.timeout - API request timeout in seconds (number)\n• chat.editMode - Enable edit mode for chat interface (boolean)\n• chat.enableNotifications - Enable desktop notifications (boolean)\n• api.oidc.scopePrefix - CodeWhisperer service endpoint URL (string)\n• api.codewhisperer.service - CodeWhisperer OIDC scope prefix (string)\n• api.q.service - Q service endpoint URL (string)\n• api.kiroauth.service - MCP server initialization timeout (number)\n• mcp.initTimeout - Kiro auth service endpoint\n• mcp.noInteractiveTimeout - Non-interactive MCP timeout (number)\n• mcp.loadedBefore - Track previously loaded MCP servers (boolean)\n• chat.enableContextUsageIndicator - Show context usage percentage in prompt (boolean)\n• chat.defaultModel - Default AI model for conversations (string)\n• chat.disableMarkdownRendering - Disable markdown formatting in chat (boolean)\n• chat.defaultAgent - Default agent configuration (string)\n• chat.disableAutoCompaction - Disable automatic conversation summarization (boolean)\n• compaction.excludeContextWindowPercent - Percentage of context window to exclude from compaction ([0, 100])\n• compaction.excludeMessages - Minimum message pairs to exclude from compaction (number)\n• chat.enableHistoryHints - Show conversation history hints (boolean)\n• chat.enablePromptHints - Show rotating prompt hints on empty input (boolean)\n• chat.enableTodoList - Enable the todo list feature (boolean)\n• chat.enableCheckpoint - Enable the checkpoint feature (boolean)\n• chat.enableDelegate - Enable the delegate tool for subagent management (boolean)\n• chat.uiMode - Specify UI variant to use (string)\n• chat.diffTool - External diff tool command (string)\n• chat.ui - Chat UI mode: 'legacy' or 'tui' (string)\n\nNOTE: Settings are managed via `kiro-cli settings` command from terminal, not slash commands in chat.\n\n\n--- CRITICAL INSTRUCTION ---\nYOU MUST ONLY provide information that is explicitly documented in the sections above. If specific details about any tool, feature, or command are not documented, you MUST clearly state that the information is not available in the documentation. DO NOT generate plausible-sounding information or make assumptions about undocumented features.\n\n",
+                      "query_context": "What MCP tools are available in this session?"
+                    }
+                  }
+                ],
+                "status": "Success"
+              }
+            ]
+          }
+        },
+        "timestamp": null,
+        "images": null
+      },
+      "assistant": {
+        "ToolUse": {
+          "message_id": "db0c73c5-6d5d-4618-863a-db1e6d58c51b",
+          "content": "Entendi. As ferramentas MCP `browser` e `dataflow` mencionadas no `AGENT_INSTRUCTIONS.md` não estão disponíveis como tools nesta sessão. Elas precisam estar configuradas como MCP servers no agente para aparecerem como ferramentas invocáveis.\n\nDeixa eu verificar se há configuração de MCP servers no projeto:",
+          "tool_uses": [
+            {
+              "id": "tooluse_1YB7ofM3jgZo4xKVJHHvKC",
+              "name": "glob",
+              "orig_name": "glob",
+              "args": {
+                "pattern": "**/.kiro/agents/*.json"
+              },
+              "orig_args": {
+                "pattern": "**/.kiro/agents/*.json"
+              }
+            },
+            {
+              "id": "tooluse_zh1ZrDzKrLgCsA26UeUWMB",
+              "name": "glob",
+              "orig_name": "glob",
+              "args": {
+                "pattern": "**/.amazonq/mcp.json"
+              },
+              "orig_args": {
+                "pattern": "**/.amazonq/mcp.json"
+              }
+            },
+            {
+              "id": "tooluse_ugVcrZ12b1nDzV38WwBYR8",
+              "name": "glob",
+              "orig_name": "glob",
+              "args": {
+                "pattern": "**/mcp*.json"
+              },
+              "orig_args": {
+                "pattern": "**/mcp*.json"
+              }
+            }
+          ]
+        }
+      },
+      "request_metadata": {
+        "request_id": "660cceca-87f1-49f4-a30e-cc176c577fb7",
+        "context_usage_percentage": 11.63,
+        "message_id": "db0c73c5-6d5d-4618-863a-db1e6d58c51b",
+        "request_start_timestamp_ms": 1773942608375,
+        "stream_end_timestamp_ms": 1773942616719,
+        "time_to_first_chunk": {
+          "secs": 3,
+          "nanos": 341072873
+        },
+        "time_between_chunks": [
+          {
+            "secs": 0,
+            "nanos": 12143
+          },
+          {
+            "secs": 0,
+            "nanos": 2836
+          },
+          {
+            "secs": 0,
+            "nanos": 9669894
+          },
+          {
+            "secs": 0,
+            "nanos": 17836139
+          },
+          {
+            "secs": 0,
+            "nanos": 22952206
+          },
+          {
+            "secs": 0,
+            "nanos": 48707239
+          },
+          {
+            "secs": 0,
+            "nanos": 27755610
+          },
+          {
+            "secs": 0,
+            "nanos": 38800091
+          },
+          {
+            "secs": 0,
+            "nanos": 53976164
+          },
+          {
+            "secs": 0,
+            "nanos": 47890484
+          },
+          {
+            "secs": 0,
+            "nanos": 80572089
+          },
+          {
+            "secs": 0,
+            "nanos": 49898656
+          },
+          {
+            "secs": 0,
+            "nanos": 52773417
+          },
+          {
+            "secs": 0,
+            "nanos": 72265508
+          },
+          {
+            "secs": 0,
+            "nanos": 60429587
+          },
+          {
+            "secs": 0,
+            "nanos": 112107111
+          },
+          {
+            "secs": 0,
+            "nanos": 40086599
+          },
+          {
+            "secs": 0,
+            "nanos": 18906554
+          },
+          {
+            "secs": 0,
+            "nanos": 16756432
+          },
+          {
+            "secs": 0,
+            "nanos": 45053499
+          },
+          {
+            "secs": 0,
+            "nanos": 34620219
+          },
+          {
+            "secs": 0,
+            "nanos": 53842869
+          },
+          {
+            "secs": 0,
+            "nanos": 55315997
+          },
+          {
+            "secs": 0,
+            "nanos": 63238443
+          },
+          {
+            "secs": 0,
+            "nanos": 24525832
+          },
+          {
+            "secs": 0,
+            "nanos": 50470605
+          },
+          {
+            "secs": 0,
+            "nanos": 59638300
+          },
+          {
+            "secs": 0,
+            "nanos": 48603985
+          },
+          {
+            "secs": 0,
+            "nanos": 101416228
+          },
+          {
+            "secs": 0,
+            "nanos": 16100389
+          },
+          {
+            "secs": 0,
+            "nanos": 27323753
+          },
+          {
+            "secs": 0,
+            "nanos": 87933555
+          },
+          {
+            "secs": 1,
+            "nanos": 422975169
+          },
+          {
+            "secs": 0,
+            "nanos": 134995762
+          },
+          {
+            "secs": 0,
+            "nanos": 137861113
+          },
+          {
+            "secs": 0,
+            "nanos": 148396504
+          },
+          {
+            "secs": 0,
+            "nanos": 69369362
+          },
+          {
+            "secs": 0,
+            "nanos": 79330888
+          },
+          {
+            "secs": 0,
+            "nanos": 77559210
+          },
+          {
+            "secs": 0,
+            "nanos": 70608259
+          },
+          {
+            "secs": 0,
+            "nanos": 56393898
+          },
+          {
+            "secs": 0,
+            "nanos": 155972977
+          },
+          {
+            "secs": 0,
+            "nanos": 19925109
+          },
+          {
+            "secs": 0,
+            "nanos": 367587453
+          },
+          {
+            "secs": 0,
+            "nanos": 7821487
+          },
+          {
+            "secs": 0,
+            "nanos": 20739395
+          },
+          {
+            "secs": 0,
+            "nanos": 64556507
+          },
+          {
+            "secs": 0,
+            "nanos": 98876228
+          },
+          {
+            "secs": 0,
+            "nanos": 37872569
+          },
+          {
+            "secs": 0,
+            "nanos": 3497
+          },
+          {
+            "secs": 0,
+            "nanos": 31055262
+          },
+          {
+            "secs": 0,
+            "nanos": 198784617
+          },
+          {
+            "secs": 0,
+            "nanos": 5111581
+          },
+          {
+            "secs": 0,
+            "nanos": 14070696
+          },
+          {
+            "secs": 0,
+            "nanos": 6512297
+          },
+          {
+            "secs": 0,
+            "nanos": 7984357
+          },
+          {
+            "secs": 0,
+            "nanos": 22015178
+          },
+          {
+            "secs": 0,
+            "nanos": 36118
+          },
+          {
+            "secs": 0,
+            "nanos": 17576863
+          },
+          {
+            "secs": 0,
+            "nanos": 141866481
+          },
+          {
+            "secs": 0,
+            "nanos": 27020197
+          },
+          {
+            "secs": 0,
+            "nanos": 26301781
+          },
+          {
+            "secs": 0,
+            "nanos": 18055363
+          },
+          {
+            "secs": 0,
+            "nanos": 67804855
+          },
+          {
+            "secs": 0,
+            "nanos": 34726
+          },
+          {
+            "secs": 0,
+            "nanos": 7443800
+          }
+        ],
+        "user_prompt_length": 0,
+        "response_size": 414,
+        "chat_conversation_type": "ToolUse",
+        "tool_use_ids_and_names": [
+          [
+            "tooluse_1YB7ofM3jgZo4xKVJHHvKC",
+            "glob"
+          ],
+          [
+            "tooluse_zh1ZrDzKrLgCsA26UeUWMB",
+            "glob"
+          ],
+          [
+            "tooluse_ugVcrZ12b1nDzV38WwBYR8",
+            "glob"
+          ]
+        ],
+        "model_id": "auto",
+        "message_meta_tags": []
+      }
+    },
+    {
+      "user": {
+        "additional_context": "",
+        "env_context": {
+          "env_state": {
+            "operating_system": "linux",
+            "current_working_directory": "/mnt/c/Users/jlortiz/Desktop/pesquisas/tableAgent",
+            "environment_variables": []
+          }
+        },
+        "content": {
+          "ToolUseResults": {
+            "tool_use_results": [
+              {
+                "tool_use_id": "tooluse_1YB7ofM3jgZo4xKVJHHvKC",
+                "content": [
+                  {
+                    "Json": {
+                      "filePaths": [],
+                      "totalFiles": 0,
+                      "truncated": false,
+                      "message": "No files found matching pattern: **/.kiro/agents/*.json"
+                    }
+                  }
+                ],
+                "status": "Success"
+              },
+              {
+                "tool_use_id": "tooluse_zh1ZrDzKrLgCsA26UeUWMB",
+                "content": [
+                  {
+                    "Json": {
+                      "filePaths": [],
+                      "totalFiles": 0,
+                      "truncated": false,
+                      "message": "No files found matching pattern: **/.amazonq/mcp.json"
+                    }
+                  }
+                ],
+                "status": "Success"
+              },
+              {
+                "tool_use_id": "tooluse_ugVcrZ12b1nDzV38WwBYR8",
+                "content": [
+                  {
+                    "Json": {
+                      "filePaths": [],
+                      "totalFiles": 0,
+                      "truncated": false,
+                      "message": "No files found matching pattern: **/mcp*.json"
+                    }
+                  }
+                ],
+                "status": "Success"
+              }
+            ]
+          }
+        },
+        "timestamp": null,
+        "images": null
+      },
+      "assistant": {
+        "ToolUse": {
+          "message_id": "72a4dbfd-6264-40f5-9fb6-17958f793601",
+          "content": "",
+          "tool_uses": [
+            {
+              "id": "tooluse_WV0dEhrRpZ4ZnOaI8h5AVq",
+              "name": "execute_bash",
+              "orig_name": "execute_bash",
+              "args": {
+                "command": "ls -la ~/.kiro/agents/ 2>/dev/null; echo \"---\"; cat ~/.kiro/settings/mcp.json 2>/dev/null || echo \"no mcp.json\"; echo \"---\"; ls ~/.amazonq/mcp.json 2>/dev/null || echo \"no amazonq mcp.json\"",
+                "summary": "Check global MCP and agent configs"
+              },
+              "orig_args": {
+                "command": "ls -la ~/.kiro/agents/ 2>/dev/null; echo \"---\"; cat ~/.kiro/settings/mcp.json 2>/dev/null || echo \"no mcp.json\"; echo \"---\"; ls ~/.amazonq/mcp.json 2>/dev/null || echo \"no amazonq mcp.json\"",
+                "summary": "Check global MCP and agent configs"
+              }
+            }
+          ]
+        }
+      },
+      "request_metadata": {
+        "request_id": "3274cea5-50ec-4723-bec2-51bbb69e546d",
+        "context_usage_percentage": 11.7955,
+        "message_id": "72a4dbfd-6264-40f5-9fb6-17958f793601",
+        "request_start_timestamp_ms": 1773942616860,
+        "stream_end_timestamp_ms": 1773942622180,
+        "time_to_first_chunk": {
+          "secs": 3,
+          "nanos": 747251298
+        },
+        "time_between_chunks": [
+          {
+            "secs": 0,
+            "nanos": 9859
+          },
+          {
+            "secs": 0,
+            "nanos": 3738
+          },
+          {
+            "secs": 1,
+            "nanos": 152172086
+          },
+          {
+            "secs": 0,
+            "nanos": 21491
+          },
+          {
+            "secs": 0,
+            "nanos": 269043
+          },
+          {
+            "secs": 0,
+            "nanos": 331089
+          },
+          {
+            "secs": 0,
+            "nanos": 400081
+          },
+          {
+            "secs": 0,
+            "nanos": 353533
+          },
+          {
+            "secs": 0,
+            "nanos": 442461
+          },
+          {
+            "secs": 0,
+            "nanos": 863602
+          },
+          {
+            "secs": 0,
+            "nanos": 1110833
+          },
+          {
+            "secs": 0,
+            "nanos": 3651505
+          },
+          {
+            "secs": 0,
+            "nanos": 1693832
+          },
+          {
+            "secs": 0,
+            "nanos": 598659
+          },
+          {
+            "secs": 0,
+            "nanos": 579451
+          },
+          {
+            "secs": 0,
+            "nanos": 732323
+          },
+          {
+            "secs": 0,
+            "nanos": 822375
+          },
+          {
+            "secs": 0,
+            "nanos": 795834
+          },
+          {
+            "secs": 0,
+            "nanos": 788847
+          },
+          {
+            "secs": 0,
+            "nanos": 3957
+          },
+          {
+            "secs": 0,
+            "nanos": 115911
+          },
+          {
+            "secs": 0,
+            "nanos": 267191
+          },
+          {
+            "secs": 0,
+            "nanos": 192537
+          },
+          {
+            "secs": 0,
+            "nanos": 146969
+          },
+          {
+            "secs": 0,
+            "nanos": 314368
+          },
+          {
+            "secs": 0,
+            "nanos": 277618
+          },
+          {
+            "secs": 0,
+            "nanos": 118896
+          },
+          {
+            "secs": 0,
+            "nanos": 133724
+          },
+          {
+            "secs": 0,
+            "nanos": 118125646
+          },
+          {
+            "secs": 0,
+            "nanos": 51207
+          },
+          {
+            "secs": 0,
+            "nanos": 8616
+          },
+          {
+            "secs": 0,
+            "nanos": 238935674
+          },
+          {
+            "secs": 0,
+            "nanos": 21864211
+          },
+          {
+            "secs": 0,
+            "nanos": 2978796
+          },
+          {
+            "secs": 0,
+            "nanos": 3151110
+          },
+          {
+            "secs": 0,
+            "nanos": 5656167
+          },
+          {
+            "secs": 0,
+            "nanos": 1395474
+          },
+          {
+            "secs": 0,
+            "nanos": 1552094
+          },
+          {
+            "secs": 0,
+            "nanos": 4786172
+          },
+          {
+            "secs": 0,
+            "nanos": 255520
+          },
+          {
+            "secs": 0,
+            "nanos": 7296471
+          }
+        ],
+        "user_prompt_length": 0,
+        "response_size": 261,
+        "chat_conversation_type": "ToolUse",
+        "tool_use_ids_and_names": [
+          [
+            "tooluse_WV0dEhrRpZ4ZnOaI8h5AVq",
+            "execute_bash"
+          ]
+        ],
+        "model_id": "auto",
+        "message_meta_tags": []
+      }
+    },
+    {
+      "user": {
+        "additional_context": "",
+        "env_context": {
+          "env_state": {
+            "operating_system": "linux",
+            "current_working_directory": "/mnt/c/Users/jlortiz/Desktop/pesquisas/tableAgent",
+            "environment_variables": []
+          }
+        },
+        "content": {
+          "ToolUseResults": {
+            "tool_use_results": [
+              {
+                "tool_use_id": "tooluse_WV0dEhrRpZ4ZnOaI8h5AVq",
+                "content": [
+                  {
+                    "Json": {
+                      "exit_status": "0",
+                      "stdout": "total 12\ndrwxr-xr-x 2 joao joao 4096 Jan  6 13:21 .\ndrwxr-xr-x 5 joao joao 4096 Jan  8 15:22 ..\n-rw-r--r-- 1 joao joao  671 Jan  6 13:21 agent_config.json.example\n---\n{\n  \"mcpServers\": {\n    \"browser\": {\n      \"command\": \"uv\",\n      \"args\": [\"--directory\", \"/mnt/c/Users/jlortiz/Desktop/pesquisas/mcpCode/browser-mcp\", \"run\", \"python\", \"server.py\"],\n      \"timeout\": 120000\n    },\n    \"dataflow\": {\n      \"command\": \"uv\",\n      \"args\": [\"--directory\", \"/mnt/c/Users/jlortiz/Desktop/pesquisas/mcpCode/dataflow-mcp\", \"run\", \"python\", \"server.py\"],\n      \"timeout\": 120000\n    }\n  }\n}\n---\nno amazonq mcp.json\n",
+                      "stderr": ""
+                    }
+                  }
+                ],
+                "status": "Success"
+              }
+            ]
+          }
+        },
+        "timestamp": null,
+        "images": null
+      },
+      "assistant": {
+        "ToolUse": {
+          "message_id": "54cfa17e-e255-4ed8-ad29-c8dc34a01ae8",
+          "content": "Os MCPs estão configurados em `~/.kiro/settings/mcp.json`, mas não estão aparecendo como ferramentas disponíveis nesta sessão. Isso pode significar que falharam ao inicializar. Deixa eu verificar se os diretórios e servidores existem:",
+          "tool_uses": [
+            {
+              "id": "tooluse_d2LVtj7bwVlwNSaz5SElYk",
+              "name": "execute_bash",
+              "orig_name": "execute_bash",
+              "args": {
+                "command": "ls /mnt/c/Users/jlortiz/Desktop/pesquisas/mcpCode/browser-mcp/server.py 2>/dev/null && echo \"browser OK\" || echo \"browser NOT FOUND\"; ls /mnt/c/Users/jlortiz/Desktop/pesquisas/mcpCode/dataflow-mcp/server.py 2>/dev/null && echo \"dataflow OK\" || echo \"dataflow NOT FOUND\"; which uv 2>/dev/null || echo \"uv NOT FOUND\"",
+                "summary": "Check if MCP server files and uv exist"
+              },
+              "orig_args": {
+                "command": "ls /mnt/c/Users/jlortiz/Desktop/pesquisas/mcpCode/browser-mcp/server.py 2>/dev/null && echo \"browser OK\" || echo \"browser NOT FOUND\"; ls /mnt/c/Users/jlortiz/Desktop/pesquisas/mcpCode/dataflow-mcp/server.py 2>/dev/null && echo \"dataflow OK\" || echo \"dataflow NOT FOUND\"; which uv 2>/dev/null || echo \"uv NOT FOUND\"",
+                "summary": "Check if MCP server files and uv exist"
+              }
+            }
+          ]
+        }
+      },
+      "request_metadata": {
+        "request_id": "2a6dc97a-39dc-4dfa-b4ca-448097e81edd",
+        "context_usage_percentage": 12.1065,
+        "message_id": "54cfa17e-e255-4ed8-ad29-c8dc34a01ae8",
+        "request_start_timestamp_ms": 1773942622267,
+        "stream_end_timestamp_ms": 1773942628168,
+        "time_to_first_chunk": {
+          "secs": 2,
+          "nanos": 679955178
+        },
+        "time_between_chunks": [
+          {
+            "secs": 0,
+            "nanos": 10240
+          },
+          {
+            "secs": 0,
+            "nanos": 3576
+          },
+          {
+            "secs": 0,
+            "nanos": 40045770
+          },
+          {
+            "secs": 0,
+            "nanos": 49483838
+          },
+          {
+            "secs": 0,
+            "nanos": 53471796
+          },
+          {
+            "secs": 0,
+            "nanos": 50705403
+          },
+          {
+            "secs": 0,
+            "nanos": 49575937
+          },
+          {
+            "secs": 0,
+            "nanos": 52641064
+          },
+          {
+            "secs": 0,
+            "nanos": 50699427
+          },
+          {
+            "secs": 0,
+            "nanos": 64932836
+          },
+          {
+            "secs": 0,
+            "nanos": 34508484
+          },
+          {
+            "secs": 0,
+            "nanos": 135087641
+          },
+          {
+            "secs": 0,
+            "nanos": 966157
+          },
+          {
+            "secs": 0,
+            "nanos": 18923124
+          },
+          {
+            "secs": 0,
+            "nanos": 229539718
+          },
+          {
+            "secs": 0,
+            "nanos": 60927349
+          },
+          {
+            "secs": 0,
+            "nanos": 47066592
+          },
+          {
+            "secs": 0,
+            "nanos": 22503542
+          },
+          {
+            "secs": 0,
+            "nanos": 15065240
+          },
+          {
+            "secs": 0,
+            "nanos": 8163823
+          },
+          {
+            "secs": 0,
+            "nanos": 4013445
+          },
+          {
+            "secs": 0,
+            "nanos": 18343876
+          },
+          {
+            "secs": 0,
+            "nanos": 56709717
+          },
+          {
+            "secs": 0,
+            "nanos": 62096085
+          },
+          {
+            "secs": 0,
+            "nanos": 147733098
+          },
+          {
+            "secs": 0,
+            "nanos": 7144
+          },
+          {
+            "secs": 1,
+            "nanos": 400377275
+          },
+          {
+            "secs": 0,
+            "nanos": 32192
+          },
+          {
+            "secs": 0,
+            "nanos": 2136018
+          },
+          {
+            "secs": 0,
+            "nanos": 1247728
+          },
+          {
+            "secs": 0,
+            "nanos": 4722756
+          },
+          {
+            "secs": 0,
+            "nanos": 2180544
+          },
+          {
+            "secs": 0,
+            "nanos": 4975829
+          },
+          {
+            "secs": 0,
+            "nanos": 8950139
+          },
+          {
+            "secs": 0,
+            "nanos": 1635466
+          },
+          {
+            "secs": 0,
+            "nanos": 1198193
+          },
+          {
+            "secs": 0,
+            "nanos": 6965911
+          },
+          {
+            "secs": 0,
+            "nanos": 1098864
+          },
+          {
+            "secs": 0,
+            "nanos": 2993052
+          },
+          {
+            "secs": 0,
+            "nanos": 1276292
+          },
+          {
+            "secs": 0,
+            "nanos": 1337207
+          },
+          {
+            "secs": 0,
+            "nanos": 843026
+          },
+          {
+            "secs": 0,
+            "nanos": 970750
+          },
+          {
+            "secs": 0,
+            "nanos": 811005
+          },
+          {
+            "secs": 0,
+            "nanos": 321012
+          },
+          {
+            "secs": 0,
+            "nanos": 552382
+          },
+          {
+            "secs": 0,
+            "nanos": 697038
+          },
+          {
+            "secs": 0,
+            "nanos": 268792
+          },
+          {
+            "secs": 0,
+            "nanos": 906106
+          },
+          {
+            "secs": 0,
+            "nanos": 140067
+          },
+          {
+            "secs": 0,
+            "nanos": 820433
+          },
+          {
+            "secs": 0,
+            "nanos": 288660
+          },
+          {
+            "secs": 0,
+            "nanos": 384252
+          },
+          {
+            "secs": 0,
+            "nanos": 329117
+          },
+          {
+            "secs": 0,
+            "nanos": 321141
+          },
+          {
+            "secs": 0,
+            "nanos": 695365
+          },
+          {
+            "secs": 0,
+            "nanos": 385214
+          },
+          {
+            "secs": 0,
+            "nanos": 1410508
+          },
+          {
+            "secs": 0,
+            "nanos": 650329
+          },
+          {
+            "secs": 0,
+            "nanos": 310452
+          },
+          {
+            "secs": 0,
+            "nanos": 2574104
+          },
+          {
+            "secs": 0,
+            "nanos": 3076
+          },
+          {
+            "secs": 0,
+            "nanos": 29968
+          },
+          {
+            "secs": 0,
+            "nanos": 193675
+          },
+          {
+            "secs": 0,
+            "nanos": 3336
+          },
+          {
+            "secs": 0,
+            "nanos": 2255
+          },
+          {
+            "secs": 0,
+            "nanos": 25398
+          },
+          {
+            "secs": 0,
+            "nanos": 328941
+          },
+          {
+            "secs": 0,
+            "nanos": 1887135
+          },
+          {
+            "secs": 0,
+            "nanos": 517015
+          },
+          {
+            "secs": 0,
+            "nanos": 3015455
+          },
+          {
+            "secs": 0,
+            "nanos": 2108807
+          },
+          {
+            "secs": 0,
+            "nanos": 415613102
+          },
+          {
+            "secs": 0,
+            "nanos": 1874059
+          },
+          {
+            "secs": 0,
+            "nanos": 33843766
+          },
+          {
+            "secs": 0,
+            "nanos": 2391105
+          },
+          {
+            "secs": 0,
+            "nanos": 8153362
+          },
+          {
+            "secs": 0,
+            "nanos": 3890582
+          },
+          {
+            "secs": 0,
+            "nanos": 725011
+          },
+          {
+            "secs": 0,
+            "nanos": 2916416
+          },
+          {
+            "secs": 0,
+            "nanos": 208447
+          },
+          {
+            "secs": 0,
+            "nanos": 6961813
+          },
+          {
+            "secs": 0,
+            "nanos": 658524
+          },
+          {
+            "secs": 0,
+            "nanos": 6622466
+          }
+        ],
+        "user_prompt_length": 0,
+        "response_size": 632,
+        "chat_conversation_type": "ToolUse",
+        "tool_use_ids_and_names": [
+          [
+            "tooluse_d2LVtj7bwVlwNSaz5SElYk",
+            "execute_bash"
+          ]
+        ],
+        "model_id": "auto",
+        "message_meta_tags": []
+      }
+    },
+    {
+      "user": {
+        "additional_context": "",
+        "env_context": {
+          "env_state": {
+            "operating_system": "linux",
+            "current_working_directory": "/mnt/c/Users/jlortiz/Desktop/pesquisas/tableAgent",
+            "environment_variables": []
+          }
+        },
+        "content": {
+          "ToolUseResults": {
+            "tool_use_results": [
+              {
+                "tool_use_id": "tooluse_d2LVtj7bwVlwNSaz5SElYk",
+                "content": [
+                  {
+                    "Json": {
+                      "exit_status": "0",
+                      "stdout": "/mnt/c/Users/jlortiz/Desktop/pesquisas/mcpCode/browser-mcp/server.py\nbrowser OK\n/mnt/c/Users/jlortiz/Desktop/pesquisas/mcpCode/dataflow-mcp/server.py\ndataflow OK\n/home/joao/miniconda3/bin/uv\n",
+                      "stderr": ""
+                    }
+                  }
+                ],
+                "status": "Success"
+              }
+            ]
+          }
+        },
+        "timestamp": null,
+        "images": null
+      },
+      "assistant": {
+        "Response": {
+          "message_id": "12d547ce-6516-4241-af53-2931fd3bf0ed",
+          "content": "Os arquivos existem e o `uv` está instalado. Os servidores MCP estão configurados mas parecem não ter sido carregados nesta sessão. Aqui vai meu feedback:\n\n---\n\n**Feedback sobre os MCPs:**\n\n**Status atual:** Os servidores `browser` e `dataflow` estão configurados em `~/.kiro/settings/mcp.json` mas **não estão carregados nesta sessão** — nenhuma ferramenta deles aparece disponível para eu invocar. Provavelmente falharam na inicialização silenciosamente.\n\n**Sugestões para diagnosticar:**\n1. Rode `/mcp` no chat para ver o status dos servidores (se estão initialized, loading, ou com erro)\n2. Ou inicie uma nova sessão com `--require-mcp-startup` para forçar erro se falharem:\n   ```bash\n   kiro-cli chat --require-mcp-startup\n   ```\n\n**Sobre o Dataflow MCP especificamente:**\n- A ideia é excelente — análise estática com tree-sitter + grafo de dependências seria muito útil para entender o fluxo do projeto (ex: rastrear como `/api/chat` chama `beam_refine`, como o frontend conecta com o backend)\n- As ferramentas `index_project`, `get_connections`, `trace_flow` seriam ideais para o teste end-to-end que precisamos fazer (task 4)\n- Mas sem ele carregado, não consigo testar\n\n**Sobre o Browser MCP:**\n- Seria útil para o teste visual (ver os botões 👍/👎, interagir com o chat)\n- Também não está disponível\n\n**O que posso fazer agora sem os MCPs:**\n- Posso ler e analisar todo o código com as ferramentas nativas (`fs_read`, `grep`, `glob`)\n- Posso rodar comandos bash para testar o backend\n- Não consigo fazer automação visual do browser\n\nQuer que eu tente rodar os servidores MCP manualmente para ver o erro, ou prefere verificar com `/mcp` primeiro?"
+        }
+      },
+      "request_metadata": {
+        "request_id": "54baff53-1377-4019-9169-e48a284837f7",
+        "context_usage_percentage": 12.4305,
+        "message_id": "12d547ce-6516-4241-af53-2931fd3bf0ed",
+        "request_start_timestamp_ms": 1773942628204,
+        "stream_end_timestamp_ms": 1773942645585,
+        "time_to_first_chunk": {
+          "secs": 3,
+          "nanos": 751874370
+        },
+        "time_between_chunks": [
+          {
+            "secs": 0,
+            "nanos": 9889
+          },
+          {
+            "secs": 0,
+            "nanos": 20737967
+          },
+          {
+            "secs": 0,
+            "nanos": 86297083
+          },
+          {
+            "secs": 0,
+            "nanos": 58776062
+          },
+          {
+            "secs": 0,
+            "nanos": 79941210
+          },
+          {
+            "secs": 0,
+            "nanos": 54150707
+          },
+          {
+            "secs": 0,
+            "nanos": 81380207
+          },
+          {
+            "secs": 0,
+            "nanos": 8642142
+          },
+          {
+            "secs": 0,
+            "nanos": 43118939
+          },
+          {
+            "secs": 0,
+            "nanos": 43486438
+          },
+          {
+            "secs": 0,
+            "nanos": 29954347
+          },
+          {
+            "secs": 0,
+            "nanos": 44245264
+          },
+          {
+            "secs": 0,
+            "nanos": 31590790
+          },
+          {
+            "secs": 0,
+            "nanos": 30621241
+          },
+          {
+            "secs": 0,
+            "nanos": 45795225
+          },
+          {
+            "secs": 0,
+            "nanos": 23929930
+          },
+          {
+            "secs": 0,
+            "nanos": 41530738
+          },
+          {
+            "secs": 0,
+            "nanos": 31881756
+          },
+          {
+            "secs": 0,
+            "nanos": 36120407
+          },
+          {
+            "secs": 0,
+            "nanos": 32734798
+          },
+          {
+            "secs": 0,
+            "nanos": 30537347
+          },
+          {
+            "secs": 0,
+            "nanos": 31436078
+          },
+          {
+            "secs": 0,
+            "nanos": 72112078
+          },
+          {
+            "secs": 0,
+            "nanos": 32574372
+          },
+          {
+            "secs": 0,
+            "nanos": 31294888
+          },
+          {
+            "secs": 0,
+            "nanos": 26508855
+          },
+          {
+            "secs": 0,
+            "nanos": 27615878
+          },
+          {
+            "secs": 0,
+            "nanos": 30268316
+          },
+          {
+            "secs": 0,
+            "nanos": 29230121
+          },
+          {
+            "secs": 1,
+            "nanos": 267949496
+          },
+          {
+            "secs": 0,
+            "nanos": 68404692
+          },
+          {
+            "secs": 0,
+            "nanos": 72241337
+          },
+          {
+            "secs": 0,
+            "nanos": 79939859
+          },
+          {
+            "secs": 0,
+            "nanos": 83354519
+          },
+          {
+            "secs": 0,
+            "nanos": 106936514
+          },
+          {
+            "secs": 0,
+            "nanos": 92784860
+          },
+          {
+            "secs": 0,
+            "nanos": 77862864
+          },
+          {
+            "secs": 0,
+            "nanos": 86124272
+          },
+          {
+            "secs": 0,
+            "nanos": 71300314
+          },
+          {
+            "secs": 0,
+            "nanos": 52133069
+          },
+          {
+            "secs": 0,
+            "nanos": 38922096
+          },
+          {
+            "secs": 0,
+            "nanos": 37951697
+          },
+          {
+            "secs": 0,
+            "nanos": 49502243
+          },
+          {
+            "secs": 0,
+            "nanos": 52090910
+          },
+          {
+            "secs": 0,
+            "nanos": 36748347
+          },
+          {
+            "secs": 0,
+            "nanos": 65449565
+          },
+          {
+            "secs": 0,
+            "nanos": 45798166
+          },
+          {
+            "secs": 0,
+            "nanos": 40752676
+          },
+          {
+            "secs": 0,
+            "nanos": 40242843
+          },
+          {
+            "secs": 0,
+            "nanos": 48148295
+          },
+          {
+            "secs": 0,
+            "nanos": 57645473
+          },
+          {
+            "secs": 0,
+            "nanos": 39430337
+          },
+          {
+            "secs": 0,
+            "nanos": 49934198
+          },
+          {
+            "secs": 0,
+            "nanos": 36219934
+          },
+          {
+            "secs": 0,
+            "nanos": 51318748
+          },
+          {
+            "secs": 0,
+            "nanos": 37643145
+          },
+          {
+            "secs": 0,
+            "nanos": 36981790
+          },
+          {
+            "secs": 0,
+            "nanos": 36202551
+          },
+          {
+            "secs": 0,
+            "nanos": 89549921
+          },
+          {
+            "secs": 0,
+            "nanos": 36890066
+          },
+          {
+            "secs": 0,
+            "nanos": 42964438
+          },
+          {
+            "secs": 0,
+            "nanos": 39049859
+          },
+          {
+            "secs": 0,
+            "nanos": 49118562
+          },
+          {
+            "secs": 0,
+            "nanos": 47134054
+          },
+          {
+            "secs": 0,
+            "nanos": 47139648
+          },
+          {
+            "secs": 0,
+            "nanos": 37444491
+          },
+          {
+            "secs": 0,
+            "nanos": 53931775
+          },
+          {
+            "secs": 0,
+            "nanos": 93289417
+          },
+          {
+            "secs": 0,
+            "nanos": 66307791
+          },
+          {
+            "secs": 0,
+            "nanos": 35430519
+          },
+          {
+            "secs": 0,
+            "nanos": 48225703
+          },
+          {
+            "secs": 0,
+            "nanos": 35877227
+          },
+          {
+            "secs": 0,
+            "nanos": 69424705
+          },
+          {
+            "secs": 0,
+            "nanos": 54700920
+          },
+          {
+            "secs": 0,
+            "nanos": 40697603
+          },
+          {
+            "secs": 0,
+            "nanos": 56865799
+          },
+          {
+            "secs": 0,
+            "nanos": 49135105
+          },
+          {
+            "secs": 0,
+            "nanos": 40350551
+          },
+          {
+            "secs": 0,
+            "nanos": 34980443
+          },
+          {
+            "secs": 0,
+            "nanos": 50398566
+          },
+          {
+            "secs": 0,
+            "nanos": 34833553
+          },
+          {
+            "secs": 0,
+            "nanos": 113374781
+          },
+          {
+            "secs": 0,
+            "nanos": 62672888
+          },
+          {
+            "secs": 0,
+            "nanos": 92486592
+          },
+          {
+            "secs": 0,
+            "nanos": 51466071
+          },
+          {
+            "secs": 0,
+            "nanos": 38644557
+          },
+          {
+            "secs": 0,
+            "nanos": 48058568
+          },
+          {
+            "secs": 0,
+            "nanos": 44905773
+          },
+          {
+            "secs": 0,
+            "nanos": 50929150
+          },
+          {
+            "secs": 0,
+            "nanos": 46483566
+          },
+          {
+            "secs": 0,
+            "nanos": 61527592
+          },
+          {
+            "secs": 0,
+            "nanos": 55844400
+          },
+          {
+            "secs": 0,
+            "nanos": 53518442
+          },
+          {
+            "secs": 0,
+            "nanos": 49830147
+          },
+          {
+            "secs": 0,
+            "nanos": 44461158
+          },
+          {
+            "secs": 0,
+            "nanos": 49710287
+          },
+          {
+            "secs": 0,
+            "nanos": 42126504
+          },
+          {
+            "secs": 0,
+            "nanos": 53355067
+          },
+          {
+            "secs": 0,
+            "nanos": 43877934
+          },
+          {
+            "secs": 0,
+            "nanos": 104773809
+          },
+          {
+            "secs": 0,
+            "nanos": 107660738
+          },
+          {
+            "secs": 0,
+            "nanos": 100627979
+          },
+          {
+            "secs": 0,
+            "nanos": 82014213
+          },
+          {
+            "secs": 0,
+            "nanos": 69637010
+          },
+          {
+            "secs": 0,
+            "nanos": 41444953
+          },
+          {
+            "secs": 0,
+            "nanos": 36261101
+          },
+          {
+            "secs": 0,
+            "nanos": 52260301
+          },
+          {
+            "secs": 0,
+            "nanos": 44771671
+          },
+          {
+            "secs": 0,
+            "nanos": 35196503
+          },
+          {
+            "secs": 0,
+            "nanos": 38322713
+          },
+          {
+            "secs": 0,
+            "nanos": 36568492
+          },
+          {
+            "secs": 0,
+            "nanos": 97452394
+          },
+          {
+            "secs": 0,
+            "nanos": 56814952
+          },
+          {
+            "secs": 0,
+            "nanos": 99618291
+          },
+          {
+            "secs": 0,
+            "nanos": 171165805
+          },
+          {
+            "secs": 0,
+            "nanos": 89835246
+          },
+          {
+            "secs": 0,
+            "nanos": 81707498
+          },
+          {
+            "secs": 0,
+            "nanos": 47046507
+          },
+          {
+            "secs": 0,
+            "nanos": 38427385
+          },
+          {
+            "secs": 0,
+            "nanos": 34695710
+          },
+          {
+            "secs": 0,
+            "nanos": 48991448
+          },
+          {
+            "secs": 0,
+            "nanos": 36222656
+          },
+          {
+            "secs": 0,
+            "nanos": 33949789
+          },
+          {
+            "secs": 0,
+            "nanos": 41137799
+          },
+          {
+            "secs": 0,
+            "nanos": 32539746
+          },
+          {
+            "secs": 0,
+            "nanos": 34790128
+          },
+          {
+            "secs": 0,
+            "nanos": 50689967
+          },
+          {
+            "secs": 0,
+            "nanos": 35632585
+          },
+          {
+            "secs": 0,
+            "nanos": 37419216
+          },
+          {
+            "secs": 0,
+            "nanos": 36805846
+          },
+          {
+            "secs": 0,
+            "nanos": 47294134
+          },
+          {
+            "secs": 0,
+            "nanos": 36132293
+          },
+          {
+            "secs": 0,
+            "nanos": 37644276
+          },
+          {
+            "secs": 0,
+            "nanos": 81806172
+          },
+          {
+            "secs": 0,
+            "nanos": 34898754
+          },
+          {
+            "secs": 0,
+            "nanos": 33757669
+          },
+          {
+            "secs": 0,
+            "nanos": 29242289
+          },
+          {
+            "secs": 0,
+            "nanos": 27914553
+          },
+          {
+            "secs": 0,
+            "nanos": 31079231
+          },
+          {
+            "secs": 0,
+            "nanos": 42535602
+          },
+          {
+            "secs": 0,
+            "nanos": 16441498
+          },
+          {
+            "secs": 0,
+            "nanos": 31909103
+          },
+          {
+            "secs": 0,
+            "nanos": 81345560
+          },
+          {
+            "secs": 0,
+            "nanos": 35570888
+          },
+          {
+            "secs": 0,
+            "nanos": 32488525
+          },
+          {
+            "secs": 0,
+            "nanos": 32144527
+          },
+          {
+            "secs": 0,
+            "nanos": 34959320
+          },
+          {
+            "secs": 0,
+            "nanos": 58295590
+          },
+          {
+            "secs": 0,
+            "nanos": 29598296
+          },
+          {
+            "secs": 0,
+            "nanos": 40307551
+          },
+          {
+            "secs": 0,
+            "nanos": 32029220
+          },
+          {
+            "secs": 0,
+            "nanos": 28793347
+          },
+          {
+            "secs": 0,
+            "nanos": 51697787
+          },
+          {
+            "secs": 0,
+            "nanos": 30532208
+          },
+          {
+            "secs": 0,
+            "nanos": 27942207
+          },
+          {
+            "secs": 0,
+            "nanos": 33293743
+          },
+          {
+            "secs": 0,
+            "nanos": 68797458
+          },
+          {
+            "secs": 0,
+            "nanos": 45945786
+          },
+          {
+            "secs": 0,
+            "nanos": 65427766
+          },
+          {
+            "secs": 0,
+            "nanos": 36721838
+          },
+          {
+            "secs": 0,
+            "nanos": 65679476
+          },
+          {
+            "secs": 0,
+            "nanos": 33557749
+          },
+          {
+            "secs": 0,
+            "nanos": 37598915
+          },
+          {
+            "secs": 0,
+            "nanos": 62888407
+          },
+          {
+            "secs": 0,
+            "nanos": 6473764
+          },
+          {
+            "secs": 0,
+            "nanos": 44155993
+          },
+          {
+            "secs": 0,
+            "nanos": 33908226
+          },
+          {
+            "secs": 0,
+            "nanos": 39430625
+          },
+          {
+            "secs": 0,
+            "nanos": 77557825
+          },
+          {
+            "secs": 0,
+            "nanos": 48558985
+          },
+          {
+            "secs": 0,
+            "nanos": 45894544
+          },
+          {
+            "secs": 0,
+            "nanos": 49468884
+          },
+          {
+            "secs": 0,
+            "nanos": 38454672
+          },
+          {
+            "secs": 0,
+            "nanos": 44635729
+          },
+          {
+            "secs": 0,
+            "nanos": 54539292
+          },
+          {
+            "secs": 0,
+            "nanos": 84898569
+          },
+          {
+            "secs": 0,
+            "nanos": 38040304
+          },
+          {
+            "secs": 0,
+            "nanos": 41847455
+          },
+          {
+            "secs": 0,
+            "nanos": 35550745
+          },
+          {
+            "secs": 0,
+            "nanos": 33526884
+          },
+          {
+            "secs": 0,
+            "nanos": 40054764
+          },
+          {
+            "secs": 0,
+            "nanos": 83544034
+          },
+          {
+            "secs": 0,
+            "nanos": 47440547
+          },
+          {
+            "secs": 0,
+            "nanos": 65823900
+          },
+          {
+            "secs": 0,
+            "nanos": 60858575
+          },
+          {
+            "secs": 0,
+            "nanos": 43960745
+          },
+          {
+            "secs": 0,
+            "nanos": 32575906
+          },
+          {
+            "secs": 0,
+            "nanos": 45148695
+          },
+          {
+            "secs": 0,
+            "nanos": 34850365
+          },
+          {
+            "secs": 0,
+            "nanos": 45738667
+          },
+          {
+            "secs": 0,
+            "nanos": 41015091
+          },
+          {
+            "secs": 0,
+            "nanos": 40702156
+          },
+          {
+            "secs": 0,
+            "nanos": 46273428
+          },
+          {
+            "secs": 0,
+            "nanos": 108549685
+          },
+          {
+            "secs": 0,
+            "nanos": 94654752
+          },
+          {
+            "secs": 0,
+            "nanos": 109769055
+          },
+          {
+            "secs": 0,
+            "nanos": 86216216
+          },
+          {
+            "secs": 0,
+            "nanos": 45928791
+          },
+          {
+            "secs": 0,
+            "nanos": 156387696
+          },
+          {
+            "secs": 0,
+            "nanos": 120422603
+          },
+          {
+            "secs": 0,
+            "nanos": 26107369
+          },
+          {
+            "secs": 0,
+            "nanos": 118333961
+          },
+          {
+            "secs": 0,
+            "nanos": 72306112
+          },
+          {
+            "secs": 0,
+            "nanos": 100006261
+          },
+          {
+            "secs": 0,
+            "nanos": 53689905
+          },
+          {
+            "secs": 0,
+            "nanos": 77522268
+          },
+          {
+            "secs": 0,
+            "nanos": 123931509
+          },
+          {
+            "secs": 0,
+            "nanos": 113783693
+          },
+          {
+            "secs": 0,
+            "nanos": 64697144
+          },
+          {
+            "secs": 0,
+            "nanos": 65680668
+          },
+          {
+            "secs": 0,
+            "nanos": 62266953
+          },
+          {
+            "secs": 0,
+            "nanos": 33700495
+          },
+          {
+            "secs": 0,
+            "nanos": 113882020
+          },
+          {
+            "secs": 0,
+            "nanos": 49346410
+          },
+          {
+            "secs": 0,
+            "nanos": 60766389
+          },
+          {
+            "secs": 0,
+            "nanos": 63719516
+          },
+          {
+            "secs": 0,
+            "nanos": 47912023
+          },
+          {
+            "secs": 0,
+            "nanos": 34000176
+          },
+          {
+            "secs": 0,
+            "nanos": 33353114
+          },
+          {
+            "secs": 0,
+            "nanos": 38424511
+          },
+          {
+            "secs": 0,
+            "nanos": 29650010
+          },
+          {
+            "secs": 0,
+            "nanos": 41282208
+          },
+          {
+            "secs": 0,
+            "nanos": 56547992
+          },
+          {
+            "secs": 0,
+            "nanos": 30916890
+          },
+          {
+            "secs": 0,
+            "nanos": 30960461
+          },
+          {
+            "secs": 0,
+            "nanos": 40699821
+          },
+          {
+            "secs": 0,
+            "nanos": 49979476
+          },
+          {
+            "secs": 0,
+            "nanos": 43517242
+          },
+          {
+            "secs": 0,
+            "nanos": 60286114
+          },
+          {
+            "secs": 0,
+            "nanos": 36073059
+          },
+          {
+            "secs": 0,
+            "nanos": 49545540
+          },
+          {
+            "secs": 0,
+            "nanos": 38357084
+          },
+          {
+            "secs": 0,
+            "nanos": 39332840
+          },
+          {
+            "secs": 0,
+            "nanos": 38286819
+          },
+          {
+            "secs": 0,
+            "nanos": 57133245
+          },
+          {
+            "secs": 0,
+            "nanos": 128547931
+          },
+          {
+            "secs": 0,
+            "nanos": 6851926
+          }
+        ],
+        "user_prompt_length": 0,
+        "response_size": 1695,
+        "chat_conversation_type": "NotToolUse",
+        "tool_use_ids_and_names": [],
+        "model_id": "auto",
+        "message_meta_tags": []
+      }
+    }
+  ],
+  "valid_history_range": [
+    0,
+    8
+  ],
+  "transcript": [
+    "> leia o AGENT",
+    "\n\nVou ler o arquivo AGENT do projeto.\n[Tool uses: glob]",
+    "\n[Tool uses: fs_read]",
+    "Aqui está o conteúdo do `AGENT_INSTRUCTIONS.md`:\n\nO arquivo é um guia de uso para dois servidores MCP disponíveis:\n\n**1. Browser MCP** — automação visual via Playwright:\n- `set_project_dir` → configurar diretório (obrigatório primeiro)\n- `navigate`, `screenshot`, `click`, `type_text`, `press_key` → interagir com a aplicação web\n- Regra: sempre usar `fs_read` modo `Image` para ler screenshots, nunca base64\n\n**2. Dataflow MCP** — análise estática de código com tree-sitter:\n- `index_project` → escanear projeto e construir grafo de dependências (obrigatório primeiro)\n- `get_connections` → ver conexões de um arquivo/símbolo (hierárquico: overview → detalhes)\n- `trace_flow` → rastrear fluxo de dados a partir de um ponto de entrada\n- Suporta JS, TS, Java, Python, PHP\n\n**Uso combinado**: conectar o visual (o que o usuário vê no browser) com o código (o que acontece por baixo) — screenshot para identificar a rota, depois `get_connections` e `trace_flow` para entender o fluxo.\n\nQuer que eu siga essas instruções para o teste end-to-end (task 4 do TODO)?\n[Tool uses: none]",
+    "> /agent swap kiro_planner",
+    "> teste utilizar o mcp, veja se ele te ajuda, e me dê o feedback, em especial do mcp dataflow",
+    "\n\nVou testar os dois MCPs agora. Começando pelo Dataflow (indexar o projeto) e pelo Browser (configurar o diretório).\n[Tool uses: dummy]",
+    "Deixa eu verificar quais ferramentas MCP estão de fato disponíveis na sessão atual:\n[Tool uses: introspect]",
+    "Entendi. As ferramentas MCP `browser` e `dataflow` mencionadas no `AGENT_INSTRUCTIONS.md` não estão disponíveis como tools nesta sessão. Elas precisam estar configuradas como MCP servers no agente para aparecerem como ferramentas invocáveis.\n\nDeixa eu verificar se há configuração de MCP servers no projeto:\n[Tool uses: glob,glob,glob]",
+    "\n[Tool uses: execute_bash]",
+    "Os MCPs estão configurados em `~/.kiro/settings/mcp.json`, mas não estão aparecendo como ferramentas disponíveis nesta sessão. Isso pode significar que falharam ao inicializar. Deixa eu verificar se os diretórios e servidores existem:\n[Tool uses: execute_bash]",
+    "Os arquivos existem e o `uv` está instalado. Os servidores MCP estão configurados mas parecem não ter sido carregados nesta sessão. Aqui vai meu feedback:\n\n---\n\n**Feedback sobre os MCPs:**\n\n**Status atual:** Os servidores `browser` e `dataflow` estão configurados em `~/.kiro/settings/mcp.json` mas **não estão carregados nesta sessão** — nenhuma ferramenta deles aparece disponível para eu invocar. Provavelmente falharam na inicialização silenciosamente.\n\n**Sugestões para diagnosticar:**\n1. Rode `/mcp` no chat para ver o status dos servidores (se estão initialized, loading, ou com erro)\n2. Ou inicie uma nova sessão com `--require-mcp-startup` para forçar erro se falharem:\n   ```bash\n   kiro-cli chat --require-mcp-startup\n   ```\n\n**Sobre o Dataflow MCP especificamente:**\n- A ideia é excelente — análise estática com tree-sitter + grafo de dependências seria muito útil para entender o fluxo do projeto (ex: rastrear como `/api/chat` chama `beam_refine`, como o frontend conecta com o backend)\n- As ferramentas `index_project`, `get_connections`, `trace_flow` seriam ideais para o teste end-to-end que precisamos fazer (task 4)\n- Mas sem ele carregado, não consigo testar\n\n**Sobre o Browser MCP:**\n- Seria útil para o teste visual (ver os botões 👍/👎, interagir com o chat)\n- Também não está disponível\n\n**O que posso fazer agora sem os MCPs:**\n- Posso ler e analisar todo o código com as ferramentas nativas (`fs_read`, `grep`, `glob`)\n- Posso rodar comandos bash para testar o backend\n- Não consigo fazer automação visual do browser\n\nQuer que eu tente rodar os servidores MCP manualmente para ver o erro, ou prefere verificar com `/mcp` primeiro?\n[Tool uses: none]",
+    "> /chat save testeMCP"
+  ],
+  "tools": {
+    "native___": [
+      {
+        "ToolSpecification": {
+          "name": "glob",
+          "description": "Find files and directories whose paths match a glob pattern. Respects .gitignore. Prefer this over the bash 'find' command for listing or discovering paths. Returns JSON with totalFiles (count found), truncated (true if limited), and filePaths array. When truncated is true, just mention results are truncated, don't state the limit number.",
+          "input_schema": {
+            "json": {
+              "properties": {
+                "pattern": {
+                  "type": "string",
+                  "description": "Glob pattern, e.g. \"**/*.rs\", \"src/**/*.{ts,tsx}\" or \"**/test*\"."
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Maximum directory depth to traverse. Increase for deep nested structures."
+                },
+                "limit": {
+                  "type": "integer",
+                  "description": "Maximum files to return. If totalFiles exceeds this, truncated will be true."
+                },
+                "path": {
+                  "description": "Root directory to search from. Only set this when the user explicitly mentions a directory path. In all other cases, omit this so the tool searches from the current working directory (the project root).",
+                  "type": "string"
+                }
+              },
+              "type": "object",
+              "required": [
+                "pattern"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "knowledge",
+          "description": "A tool for indexing and searching content across chat sessions using semantic search.\n\n## Overview\nThis tool enables persistent storage and retrieval of information using semantic search (MiniLLM) or keyword search (BM25). Content remains available across sessions for later use.\n\n## When to use\n- When users ask to query your knowledge bases or kbs\n- When you need to search previously indexed content\n- When users request to index new content (code, markdown, CSV, PDF, and other text file formats)\n- When exploring unfamiliar content to find relevant information\n- When users ask about topics that might be in indexed knowledge bases\n\n## When not to use\n- When content has not been indexed yet and user hasn't requested indexing\n- When you need real-time or external information not in the knowledge base\n\n## Notes\n- Use 'show' command to list available knowledge bases before searching\n- Search can target specific knowledge bases (context_id) or all knowledge bases\n- Use default limit values unless specifically needed; fewer results for focused search\n- Pagination available via offset parameter for large result sets\n- 'add' command indexes new content; 'update' command refreshes existing knowledge bases\n- Unless there is a clear reason to modify the search query, use the user's original wording for better semantic matching",
+          "input_schema": {
+            "json": {
+              "type": "object",
+              "properties": {
+                "command": {
+                  "type": "string",
+                  "enum": [
+                    "show",
+                    "add",
+                    "remove",
+                    "clear",
+                    "search",
+                    "update",
+                    "status",
+                    "cancel"
+                  ],
+                  "description": "The knowledge operation to perform:\n- 'show': List all knowledge contexts (no additional parameters required)\n- 'add': Add content to knowledge base (requires 'name' and 'value')\n- 'remove': Remove content from knowledge base (requires one of: 'name', 'context_id', or 'path')\n- 'clear': Remove all knowledge contexts.\n- 'search': Search across knowledge contexts (requires 'query', optional: 'context_id', 'limit', 'offset', 'snippet_length', 'sort_by', 'file_type')\n- 'update': Update existing context with new content (requires 'path' and one of: 'name', 'context_id')\n- 'status': Show background operation status and progress\n- 'cancel': Cancel background operations (optional 'operation_id' to cancel specific operation, or cancel all if not provided)"
+                },
+                "file_type": {
+                  "description": "Filter results by file type (e.g., 'Code', 'Markdown', 'Text'). Optional for 'search' operations.",
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "A descriptive name for the knowledge context. Required for 'add' operations. Can be used for 'remove' and 'update' operations to identify the context."
+                },
+                "query": {
+                  "description": "The search query string. Required for 'search' operations. Performs semantic search across knowledge contexts to find relevant content.",
+                  "type": "string"
+                },
+                "limit": {
+                  "type": "integer",
+                  "description": "Maximum number of search results to return, use default value unless required more results or focused search. Optional for 'search' operations."
+                },
+                "sort_by": {
+                  "enum": [
+                    "relevance",
+                    "path",
+                    "name"
+                  ],
+                  "description": "Sort order for search results. Options: 'relevance' (default, by similarity score), 'path' or 'name' (alphabetically by file path). Optional for 'search' operations.",
+                  "type": "string"
+                },
+                "offset": {
+                  "type": "integer",
+                  "description": "Number of results to skip for pagination. Optional for 'search' operations."
+                },
+                "path": {
+                  "type": "string",
+                  "description": "File or directory path. Used in 'remove' operations to remove contexts by their source path, and required for 'update' operations to specify the new content location."
+                },
+                "value": {
+                  "type": "string",
+                  "description": "The content to store in knowledge base. Required for 'add' operations. Can be either text content or a file/directory path. If it's a valid file or directory path, the content will be indexed; otherwise it's treated as text."
+                },
+                "context_id": {
+                  "type": "string",
+                  "description": "The unique context identifier for targeted operations. Can be obtained from 'show' command. Used for 'remove', 'update', and 'search' operations to specify which context to operate on."
+                },
+                "operation_id": {
+                  "description": "Optional operation ID to cancel a specific operation. Used with 'cancel' command. If not provided, all active operations will be cancelled. Can be either the full operation ID or the short 8-character ID.",
+                  "type": "string"
+                },
+                "snippet_length": {
+                  "description": "Maximum character length for text snippets in results. Text longer than this will be truncated. Optional for 'search' operations.",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "command"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "web_fetch",
+          "description": "Fetch and extract content from a specific URL. Supports three modes: 'selective' (default, extracts relevant sections around search terms), 'truncated' (first 8000 chars), 'full' (complete content). Use 'selective' mode to read specific parts of a page multiple times without filling context. Provide 'search_terms' in selective mode to find relevant sections (e.g., 'pricing', 'installation').",
+          "input_schema": {
+            "json": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "description": "URL to fetch content from",
+                  "type": "string"
+                },
+                "mode": {
+                  "type": "string",
+                  "enum": [
+                    "selective",
+                    "truncated",
+                    "full"
+                  ],
+                  "description": "Extraction mode: 'selective' for smart extraction (default), 'truncated' for first 8000 chars, 'full' for complete content"
+                },
+                "search_terms": {
+                  "description": "Optional: Keywords to find in selective mode (e.g., 'pricing cost', 'installation setup'). Returns ~10 lines before and after matches. If not provided, returns beginning of page.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "url"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "fs_read",
+          "description": "Tool for reading files, directories and images. Always provide an 'operations' array.\n\nFor single operation: provide array with one element.\nFor batch operations: provide array with multiple elements.\n\nAvailable modes:\n- Line: Read lines from a file\n- Directory: List directory contents\n- Search: Search for patterns in files\n- Image: Read and process images\n\nExamples:\n1. Single: {\"operations\": [{\"mode\": \"Line\", \"path\": \"/file.txt\"}]}\n2. Batch: {\"operations\": [{\"mode\": \"Line\", \"path\": \"/file1.txt\"}, {\"mode\": \"Search\", \"path\": \"/file2.txt\", \"pattern\": \"test\"}]}",
+          "input_schema": {
+            "json": {
+              "required": [
+                "operations"
+              ],
+              "type": "object",
+              "properties": {
+                "operations": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "required": [
+                      "mode"
+                    ],
+                    "properties": {
+                      "exclude_patterns": {
+                        "default": [
+                          "node_modules",
+                          ".git",
+                          "dist",
+                          "build",
+                          "out",
+                          ".cache",
+                          "target"
+                        ],
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "Glob patterns to exclude from directory listing (optional, for Directory mode). If omitted, uses defaults. If empty array [] is provided, no exclusions are applied (shows everything). If patterns are provided, they completely override the defaults. Examples: '**/target/**', '*.log'",
+                        "type": "array"
+                      },
+                      "end_line": {
+                        "default": -1,
+                        "type": "integer",
+                        "description": "Ending line number (optional, for Line mode). A negative index represents a line number starting from the end of the file."
+                      },
+                      "path": {
+                        "type": "string",
+                        "description": "Path to the file or directory. The path should be absolute, or otherwise start with ~ for the user's home (required for Line, Directory, Search modes)."
+                      },
+                      "context_lines": {
+                        "default": 2,
+                        "type": "integer",
+                        "description": "Number of context lines around search results (optional, for Search mode)"
+                      },
+                      "max_entries": {
+                        "type": "integer",
+                        "description": "Maximum number of entries to return (optional, for Directory mode). When limit is reached, results are truncated and metadata shows 'showing X of Y entries'. Use to prevent context window overflow. Default: 1000",
+                        "default": 1000
+                      },
+                      "pattern": {
+                        "type": "string",
+                        "description": "Pattern to search for (required, for Search mode). Case insensitive. The pattern matching is performed per line."
+                      },
+                      "depth": {
+                        "type": "integer",
+                        "description": "Depth of a recursive directory listing (optional, for Directory mode)",
+                        "default": 0
+                      },
+                      "image_paths": {
+                        "description": "List of paths to the images. This is currently supported by the Image mode.",
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "mode": {
+                        "type": "string",
+                        "description": "The operation mode to run in: `Line`, `Directory`, `Search`. `Line` and `Search` are only for text files, and `Directory` is only for directories. `Image` is for image files, in this mode `image_paths` is required.",
+                        "enum": [
+                          "Line",
+                          "Directory",
+                          "Search",
+                          "Image"
+                        ]
+                      },
+                      "offset": {
+                        "description": "Number of entries to skip for pagination (optional, for Directory mode). Use with max_entries to iterate through large directories. Entries are sorted by last modified time (most recent first). Default: 0",
+                        "default": 0,
+                        "type": "integer"
+                      },
+                      "start_line": {
+                        "description": "Starting line number (optional, for Line mode). A negative index represents a line number starting from the end of the file.",
+                        "type": "integer",
+                        "default": 1
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "description": "Array of operations to execute. Provide one element for single operation, multiple for batch."
+                },
+                "summary": {
+                  "type": "string",
+                  "description": "Optional description of the purpose of this batch operation (mainly useful for multiple operations)"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "todo_list",
+          "description": "A tool for creating a TODO list and keeping track of tasks. This tool should be requested EVERY time the user gives you a task that will take multiple steps. A TODO list should be made BEFORE executing any steps. Steps should be marked off AS YOU COMPLETE THEM. DO NOT display your own tasks or todo list AT ANY POINT; this is done for you. Complete the tasks in the same order that you provide them. If the user tells you to skip a step, DO NOT mark it as completed.",
+          "input_schema": {
+            "json": {
+              "properties": {
+                "insert_indices": {
+                  "description": "Required parameter of `add` command containing a list of 0-INDEXED positions to insert the new tasks. There MUST be an index for every new task being added.",
+                  "type": "array",
+                  "items": {
+                    "type": "integer"
+                  }
+                },
+                "modified_files": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Optional parameter of `complete` command containing a list of paths of files that were modified during the task. This is useful for tracking file changes that are important to the task."
+                },
+                "current_id": {
+                  "type": "string",
+                  "description": "Required parameter of `complete`, `add`, and `remove` commands containing the ID of the currently loaded todo list. The ID will ALWAYS be provided after every `todo_list` call after the serialized todo list state."
+                },
+                "remove_indices": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "description": "Required parameter of `remove` command containing a list of 0-INDEXED positions of tasks to remove.",
+                  "type": "array"
+                },
+                "context_update": {
+                  "type": "string",
+                  "description": "Required parameter of `complete` command containing important task context. Use this command to track important information about the task AND information about files you have read."
+                },
+                "command": {
+                  "description": "The command to run. Allowed options are `create`, `complete`, `load`, `add`, `remove`, and `lookup`. Call `lookup` without arguments to see a list of all existing TODO list IDs.",
+                  "type": "string",
+                  "enum": [
+                    "create",
+                    "complete",
+                    "load",
+                    "add",
+                    "remove",
+                    "lookup"
+                  ]
+                },
+                "load_id": {
+                  "type": "string",
+                  "description": "Required parameter of `load` command containing ID of todo list to load"
+                },
+                "tasks": {
+                  "description": "Required parameter of `create` command containing the list of DISTINCT tasks to be added to the TODO list.",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "task_description": {
+                        "type": "string",
+                        "description": "The main task description"
+                      },
+                      "details": {
+                        "type": "string",
+                        "description": "Optional detailed information about the task"
+                      }
+                    },
+                    "required": [
+                      "task_description"
+                    ]
+                  },
+                  "type": "array"
+                },
+                "todo_list_description": {
+                  "description": "Required parameter of `create` command containing a BRIEF summary of the todo list being created. The summary should be detailed enough to refer to without knowing the problem context beforehand.",
+                  "type": "string"
+                },
+                "completed_indices": {
+                  "items": {
+                    "type": "integer"
+                  },
+                  "description": "Required parameter of `complete` command containing the 0-INDEXED numbers of EVERY completed task. Each task should be marked as completed IMMEDIATELY after it is finished.",
+                  "type": "array"
+                },
+                "new_tasks": {
+                  "type": "array",
+                  "description": "Required parameter of `add` command containing a list of new tasks to be added to the to-do list.",
+                  "items": {
+                    "properties": {
+                      "details": {
+                        "description": "Optional detailed information about the task",
+                        "type": "string"
+                      },
+                      "task_description": {
+                        "type": "string",
+                        "description": "The main task description"
+                      }
+                    },
+                    "type": "object",
+                    "required": [
+                      "task_description"
+                    ]
+                  }
+                },
+                "new_description": {
+                  "type": "string",
+                  "description": "Optional parameter of `add` and `remove` containing a new todo list description. Use this when the updated set of tasks significantly change the goal or overall procedure of the todo list."
+                }
+              },
+              "required": [
+                "command"
+              ],
+              "type": "object"
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "web_search",
+          "description": "WebSearch looks up information that is outside the model's training data or cannot be reliably inferred from the current codebase/context.\nTool performs basic compliance wrt content licensing and restriction.\nAs an agent you are responsible for adhering to compliance and attribution requirements.\nIMPORTANT: The snippets often contain enough information to answer questions - only use web_fetch if you need more detailed content from a specific webpage.\n\n## When to Use\n- When the user asks for current or up-to-date information (e.g., pricing, versions, technical specs) or explicitly requests a web search.\n- When verifying information that may have changed recently, or when the user provides a specific URL to inspect.\n\n## When NOT to Use\n- When the question involves basic concepts, historical facts, or well-established programming syntax/technical documentation.\n- When the topic does not require current or evolving information.\n\nFor any code-related tasks, follow this order:\n1. Search within the repository (if tools are available) and check if it can be inferred from existing code or documentation.\n2. Use this tool only if still unresolved and the library/data is likely new/unseen.\n\n## Content Compliance Requirements\nYou MUST adhere to strict licensing restrictions and attribution requirements when using search results:\n\n### Attribution Requirements\n- ALWAYS provide inline links to original sources using format: [description](url)\n- If not possible to provide inline link, add sources at the end of file\n- Ensure attribution is visible and accessible\n\n### Verbatim Reproduction Limits\n- NEVER reproduce more than 30 consecutive words from any single source\n- Track word count per source to ensure compliance\n- Always paraphrase and summarize rather than quote directly\n- Add compliance note when the content from the source is rephrased: \"Content was rephrased for compliance with licensing restrictions\"\n\n### Content Modification Guidelines\n- You MAY paraphrase, summarize, and reformat content\n- You MUST NOT materially change the underlying substance or meaning\n- Preserve factual accuracy while condensing information\n- Avoid altering core arguments, data, or conclusions\n\n## Usage Details\n- You may rephrase user queries to improve search effectiveness\n- You can make multiple queries to gather comprehensive information\n- Consider breaking complex questions into focused searches\n- Refine queries based on initial results if needed\n\n## Output Usage\n- Prioritize latest published sources based on publishedDate\n- Prefer official documentation to blogs and news posts\n- Use domain information to assess source authority and reliability\n\n## Error Handling\n- If unable to comply with content restrictions, explain limitations to user\n- Suggest alternative approaches when content cannot be reproduced\n- Prioritize compliance over completeness when conflicts arise\n\n## Output\nThe tool returns a JSON object with a \"results\" array containing search results:\n\n{\n  \"results\": [\n    {\n      \"title\": \"Example Page Title\",\n      \"url\": \"https://example.com/page\",\n      \"snippet\": \"Brief excerpt from the page...\",\n      \"publishedDate\": \"2025-11-20T10:30:00Z\",\n      \"domain\": \"example.com\",\n      \"id\": \"unique-id-123\",\n      \"maxVerbatimWordLimit\": 30,\n      \"publicDomain\": false\n    }\n  ]\n}\n\n## UI FROM LLM (You) back to the user\nCRITICAL: Always start your response with \"Here's what I found:\" and then start from a newline.\nALWAYS end your response with a blank line followed by 'References:' and list the sources you used in sequential order [1], [2], [3], etc. with NO gaps in numbering. Format: '[N] Title - URL' one per line. Truncate long titles to 80 characters and long URLs to 100 characters, adding '...' if truncated.",
+          "input_schema": {
+            "json": {
+              "required": [
+                "query"
+              ],
+              "type": "object",
+              "properties": {
+                "query": {
+                  "description": "Search query - can be keywords, questions, or specific topics",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "switch_to_execution",
+          "description": "Use this tool when you have finished planning and are ready to switch back to the execution agent.\n\n## How This Tool Works\n- This tool signals that planning is complete and presents the user with two options:\n  - **y**: Switch to execution agent and begin implementation immediately\n  - **n**: Continue planning (stay with planner agent for refinements)\n- The user will see your plan and choose how to proceed\n\n## When to Use This Tool\nIMPORTANT: Only use this tool when you have completed planning for a task that requires code implementation. For research tasks where you're gathering information, searching files, reading files or in general trying to understand the codebase - do NOT use this tool.\n\n## Handling Ambiguity in Plans\nBefore using this tool, ensure your plan is clear and unambiguous. If there are multiple valid approaches or unclear requirements:\n1. Ask the user questions to clarify\n2. Ask about specific implementation choices (e.g., architectural patterns, which library to use)\n3. Clarify any assumptions that could affect the implementation\n4. Edit your plan to incorporate user feedback\n5. Only proceed with SwitchToExecution after resolving ambiguities",
+          "input_schema": {
+            "json": {
+              "properties": {
+                "plan": {
+                  "type": "string",
+                  "description": "The generated implementation plan"
+                }
+              },
+              "type": "object",
+              "required": [
+                "plan"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "grep",
+          "description": "Fast text pattern search in files using regex. ALWAYS use this tool instead of 'grep', 'rg', or 'ag' commands in bash. Respects .gitignore.\n\n## Text Discovery Only\nUse grep for literal text/pattern matching: error messages, TODOs, config values, regex patterns.\n\n## For Semantic Code Understanding → Use 'code' tool if available\n- Finding symbol definitions or usages → code tool (search_symbols, goto_definition, find_references)\n- Understanding code structure/relationships → code tool\n- Distinguishing definition vs call vs import → code tool\n\n## Fallback\nIf the 'code' tool is available but returns insufficient symbol info, use grep to discover candidate files/lines, then return to 'code' for precise navigation.\n\nWhen you use this tool, prefer to show the user a small list of representative matches (including file paths and line numbers) instead of only giving a high-level summary.",
+          "input_schema": {
+            "json": {
+              "type": "object",
+              "properties": {
+                "output_mode": {
+                  "type": "string",
+                  "enum": [
+                    "content",
+                    "files_with_matches",
+                    "count"
+                  ],
+                  "description": "Output format: 'content' returns matches as 'file:line:content' (default, best for seeing actual matches), 'files_with_matches' returns only file paths, 'count' returns match counts per file."
+                },
+                "max_matches_per_file": {
+                  "type": "integer",
+                  "description": "Max matches returned per file (output limit). Increase to see all occurrences in a file."
+                },
+                "max_depth": {
+                  "type": "integer",
+                  "description": "Max directory depth to traverse when searching (search limit). Increase for deeply nested structures."
+                },
+                "case_sensitive": {
+                  "type": "boolean",
+                  "description": "Case-sensitive search. Defaults to false (case-insensitive)."
+                },
+                "max_files": {
+                  "description": "Max number of files returned (output limit). Increase for comprehensive codebase searches.",
+                  "type": "integer"
+                },
+                "max_total_lines": {
+                  "description": "Max total matched lines returned across all files (output limit). Increase when searching for many occurrences.",
+                  "type": "integer"
+                },
+                "pattern": {
+                  "description": "Regex pattern to search for. Examples: \"fn main\", \"class.*Component\", \"TODO|FIXME\". Start with simple patterns first (e.g. just the word you're looking for), then refine if needed.",
+                  "type": "string"
+                },
+                "path": {
+                  "description": "Directory to search from. Defaults to current working directory.",
+                  "type": "string"
+                },
+                "include": {
+                  "description": "File filter glob. Examples: \"*.rs\", \"*.{ts,tsx}\", \"*.py\"",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "pattern"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "execute_bash",
+          "description": "Execute the specified bash command. NEVER prefix commands with cd to change the working directory, use the `working_dir` argument instead.",
+          "input_schema": {
+            "json": {
+              "properties": {
+                "working_dir": {
+                  "type": "string",
+                  "description": "Working directory for command execution. Supports tilde expansion (e.g., ~/projects). If not specified, uses the current working directory."
+                },
+                "command": {
+                  "description": "Bash command to execute",
+                  "type": "string"
+                },
+                "summary": {
+                  "description": "A brief explanation of what the command does",
+                  "type": "string"
+                }
+              },
+              "type": "object",
+              "required": [
+                "command"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "introspect",
+          "description": "Use ONLY when the user is asking about this chat application's own features, slash commands, settings, or capabilities. Do NOT use for general coding questions, AWS help, or tasks the user wants you to perform. When mentioning commands in your response, always prefix them with '/' (e.g., '/save', '/load', '/context'). CRITICAL: Only provide information explicitly documented. If details about any tool, feature, or command are not documented, clearly state the information is not available rather than generating assumptions.",
+          "input_schema": {
+            "json": {
+              "type": "object",
+              "properties": {
+                "doc_path": {
+                  "type": "string",
+                  "description": "Path to a specific doc to retrieve (e.g., \"features/tangent-mode.md\"). Use this to get full content of a doc from the index."
+                },
+                "query": {
+                  "type": "string",
+                  "description": "The user's question about this assistant's usage, features, or capabilities"
+                }
+              },
+              "required": []
+            }
+          }
+        }
+      },
+      {
+        "ToolSpecification": {
+          "name": "dummy",
+          "description": "This is a dummy tool. If you are seeing this that means the tool associated with this tool call is not in the list of available tools. This could be because a wrong tool name was supplied or the list of tools has changed since the conversation has started. Do not show this when user asks you to list tools.",
+          "input_schema": {
+            "json": {
+              "required": [],
+              "properties": {},
+              "type": "object"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "context_manager": {
+    "max_context_files_size": 150000,
+    "current_profile": "kiro_planner",
+    "paths": [
+      "AmazonQ.md",
+      "AGENTS.md",
+      "README.md",
+      ".kiro/skills/*/SKILL.md",
+      "~/.kiro/skills/*/SKILL.md",
+      "/home/joao/.kiro/steering/**/*.md"
+    ],
+    "hooks": {}
+  },
+  "context_message_length": 6113,
+  "latest_summary": null,
+  "model_info": {
+    "model_name": "auto",
+    "description": "Models chosen by task for optimal usage and consistent quality",
+    "model_id": "auto",
+    "context_window_tokens": 200000,
+    "rate_multiplier": 1.0,
+    "rate_unit": "Credit"
+  },
+  "file_line_tracker": {},
+  "checkpoint_manager": null,
+  "mcp_enabled": true,
+  "mcp_last_checked": [
+    2026,
+    78,
+    17,
+    48,
+    38,
+    847420695,
+    0,
+    0,
+    0
+  ],
+  "mcp_server_versions": {},
+  "mcp_disabled_due_to_api_failure": false,
+  "user_turn_metadata": {
+    "continuation_id": "1754d8a1-c924-4124-ab59-1d2fadd8fad6",
+    "requests": [],
+    "usage_info": []
+  }
+}

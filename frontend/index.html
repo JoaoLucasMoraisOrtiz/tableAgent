@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TableAgent</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside id="sidebar">
+  <div id="sidebar-top">
+    <button class="btn-icon" onclick="toggleSidebar()">☰</button>
+    <span class="logo">⊞ TableAgent</span>
+  </div>
+  <button class="btn-new-project" onclick="newProject()">＋ Novo projeto</button>
+  <div id="project-list"></div>
+  <div id="active-project" class="hidden">
+    <div id="project-name"></div>
+    <button class="btn-import" onclick="importSheet()">＋ Importar planilha</button>
+    <div id="file-tree"></div>
+  </div>
+</aside>
+<button id="sidebar-open" class="hidden btn-icon" onclick="toggleSidebar()">⊞</button>
+
+<div id="resize-left" class="resize-handle"></div>
+
+<main id="chat-center">
+  <div id="model-bar">
+    <select id="model-select" onchange="switchModel(this.value)">
+      <option value="heuristic">Heurística</option>
+    </select>
+    <button class="btn-icon" onclick="openSettings()" title="Configurações">⚙</button>
+  </div>
+  <div id="chat-messages"></div>
+  <div id="chat-ref" class="hidden" onclick="clearRef()"></div>
+  <div id="chat-input-area" ondragover="event.preventDefault()" ondrop="onDrop(event)">
+    <div id="chips"></div>
+    <div id="input-row">
+      <button class="btn-icon" id="btn-attach" onclick="showTableMenu()">+</button>
+      <input id="chat-input" placeholder="Pergunte sobre seus dados… (# para anexar tabela)"
+             onkeydown="if(event.key==='Enter')sendChat()" oninput="onChatInput(event)">
+      <button id="btn-send" onclick="sendChat()">Enviar</button>
+    </div>
+    <div id="table-menu" class="hidden"></div>
+  </div>
+</main>
+
+<div id="resize-right" class="resize-handle"></div>
+
+<button id="panel-toggle" onclick="togglePanel()" title="Abrir painel">‹</button>
+
+<section id="right-panel" class="hidden">
+  <div id="panel-context">
+    <span id="panel-chips"></span>
+    <button class="btn-icon" onclick="showPanelTableMenu()" title="Adicionar tabela">＋</button>
+    <div id="panel-table-menu" class="hidden"></div>
+  </div>
+  <div id="panel-tabs">
+    <button class="tab active" onclick="showTab('map')">🗺 Análises</button>
+    <button class="tab" onclick="showTab('data')">📋 Dados</button>
+    <button class="btn-icon panel-close" onclick="togglePanel()" title="Fechar painel">›</button>
+  </div>
+  <div id="view-map">
+    <div id="zoom-controls">
+      <button class="btn-icon" onclick="zoomIn()">＋</button>
+      <button class="btn-icon" onclick="zoomReset()">⊙</button>
+      <button class="btn-icon" onclick="zoomOut()">−</button>
+    </div>
+    <svg id="mindmap"></svg>
+    <div id="node-detail" class="hidden">
+      <div id="node-detail-title"></div>
+      <div id="node-detail-body"></div>
+      <button id="node-detail-close" onclick="closeDetail()">✕</button>
+    </div>
+    <div id="expand-progress" class="hidden">
+      <span id="expand-label">Expandindo…</span>
+      <div class="bar"><div class="bar-fill" id="expand-bar"></div></div>
+    </div>
+  </div>
+  <div id="view-data" class="hidden">
+    <div id="data-issues"></div>
+    <div id="data-table-wrap">
+      <div class="data-section-title">📋 Dados da tabela</div>
+      <table id="data-table"><thead></thead><tbody></tbody></table>
+    </div>
+    <div id="data-pager"></div>
+  </div>
+</section>
+
+<div id="result-modal" class="hidden">
+  <div id="result-modal-inner">
+    <div id="result-modal-header">
+      <span id="result-modal-title"></span>
+      <button class="btn-icon" onclick="closeResultModal()">✕</button>
+    </div>
+    <div id="result-modal-body"></div>
+  </div>
+</div>
+
+<div id="settings-modal" class="hidden">
+  <div id="settings-inner">
+    <div id="settings-header">
+      <span>⚙ Configurações</span>
+      <button class="btn-icon" onclick="closeSettings()">✕</button>
+    </div>
+    <div id="settings-body">
+      <label>Google API Key
+        <input id="set-google-key" type="password" placeholder="AIza…">
+      </label>
+      <label>Modelo Google
+        <input id="set-google-model" value="gemma-3-4b-it" placeholder="gemma-3-4b-it">
+      </label>
+      <button id="btn-save-settings" onclick="saveSettings()">Salvar</button>
+      <div id="settings-status"></div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
